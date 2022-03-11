@@ -1,0 +1,11 @@
+[run]
+omit = service/logger/service_logger.py
+    service/converter/legacy/*
+    service/converter/rapidconnector.py
+    service/converter/unzip.py
+    dao/dao_base_server.py
+    dao/dao_convert.py
+    dao/dao_file.py
+    dao/dao_job.py
+    dao/utils.py
+

@@ -1,0 +1,77 @@
+[
+    {
+        "title": "1. Function Name",
+        "items": [
+            {
+                "target": "func_name",
+                "title": "From",
+                "type": "text",
+                "content": ""
+            }
+        ]
+    },
+    {
+        "title": "2. Source Type",
+        "items": [
+            {
+                "target": "source_type",
+                "title": "From",
+                "type": "text",
+                "content": "remote"
+            }
+        ]
+    },
+    {
+        "title": "3. Select Data Source",
+        "items": [
+            {
+                "target": "db_id",
+                "title": "From",
+                "type": "select",
+                "mode": "singular",
+                "options": [],
+                "selected": null
+            },
+            {
+                "target": "table_name",
+                "title": "",
+                "type": "text",
+                "content": ""
+            }
+        ]
+    },
+    {
+        "title": "4. Select Equipment",
+        "items": [
+            {
+                "target": "user_fab",
+                "title": "User/Fab",
+                "type": "select",
+                "mode": "subItem",
+                "options": [],
+                "selected": null,
+                "subItem": {
+                    "target": "equipment_name",
+                    "title": "Equipment",
+                    "type": "select",
+                    "mode": "singular",
+                    "options": [],
+                    "selected": null
+                }
+            }
+        ]
+    },
+    {
+        "title": "5. Select Start/End Date",
+        "items": [
+            {
+                "target": "period",
+                "title": "Period",
+                "type": "DatePicker",
+                "period": null,
+                "selected": null,
+                "enable": true
+            }
+        ]
+    }
+]

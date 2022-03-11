@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width,initial-scale=1"/>
+		<meta name="theme-color" content="#000000"/>
+		<title>MPA Analysis Tool</title>
+	</head>
+	<body>
+		<div id="root"></div>
+	</body>
+	<script>
+		const browser = (function (agent) {
+			let support = false;
+			switch (true) {
+				case agent.indexOf('edge') > -1:
+					break;
+				case agent.indexOf('edg/') > -1:
+					support = true;
+					break; // Match also / to avoid matching for the older Edge
+				case agent.indexOf('chrome') > -1 && !!window.chrome:
+					support = true;
+					break;
+				default:
+					break;
+			}
+			if (!support) {
+				//alert("This browser is not supported by Rapid Collector.\nPlease connect with Chrome or Edge(based on Chromium).")
+				window.location.replace('http://' + window.location.host + '/main/notsupport');
+			}
+		})(window.navigator.userAgent.toLowerCase());
+	</script>
+</html>

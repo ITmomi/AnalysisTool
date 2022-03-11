@@ -1,0 +1,1 @@
+create type public.header_type as enum ('with_header', 'without_header');

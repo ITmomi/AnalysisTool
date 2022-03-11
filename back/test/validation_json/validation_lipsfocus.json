@@ -1,0 +1,475 @@
+{
+    "lists_default":{
+        "items": [{
+            "target": "one_period",
+            "title": "One Period",
+            "type": "select",
+            "mode": "subItem",
+            "options": ["12h", "24h", "7d", "14d", "1m"],
+            "subItem": {
+                "target": "adj_period",
+                "title": "Adjust Period",
+                "type": "select",
+                "mode": "singular",
+                "options": [{
+                    "12h": ["0h", "1h", "2h", "3h", "4h", "5h", "6h", "7h", "8h", "9h", "10h", "11h", "12h", "13h", "14h", "15h", "16h", "17h", "18h", "19h", "20h", "21h", "22h", "23h"]
+                }, {
+                    "24h": ["0h", "1h", "2h", "3h", "4h", "5h", "6h", "7h", "8h", "9h", "10h", "11h", "12h", "13h", "14h", "15h", "16h", "17h", "18h", "19h", "20h", "21h", "22h", "23h"]
+                }, {
+                    "7d": ["0d", "1d", "2d", "3d", "4d", "5d", "6d", "7d", "8d", "9d", "10d", "11d", "12d", "13d", "14d", "15d", "16d", "17d", "18d", "19d", "20d", "21d", "22d", "23d", "24d", "25d", "26d", "27d", "28d", "29d", "30d", "31d"]
+                }, {
+                    "14d": ["0d", "1d", "2d", "3d", "4d", "5d", "6d", "7d", "8d", "9d", "10d", "11d", "12d", "13d", "14d", "15d", "16d", "17d", "18d", "19d", "20d", "21d", "22d", "23d", "24d", "25d", "26d", "27d", "28d", "29d", "30d", "31d"]
+                }, {
+                    "1m": ["0d", "1d", "2d", "3d", "4d", "5d", "6d", "7d", "8d", "9d", "10d", "11d", "12d", "13d", "14d", "15d", "16d", "17d", "18d", "19d", "20d", "21d", "22d", "23d", "24d", "25d", "26d", "27d", "28d", "29d", "30d", "31d"]
+                }],
+                "selected": "0h"
+            },
+            "selected": "24h"
+        }, {
+            "target": "list_group",
+            "title": "List Group",
+            "type": "select",
+            "mode": "singular",
+            "options": ["job"],
+            "selected": null
+        }],
+        "data": [{
+            "start": "2021-04-20 00:00:00",
+            "end": "2021-04-20 23:59:59"
+        }, {
+            "start": "2021-04-21 00:00:00",
+            "end": "2021-04-21 23:59:59"
+        }, {
+            "start": "2021-04-22 00:00:00",
+            "end": "2021-04-22 23:59:59"
+        }, {
+            "start": "2021-04-24 00:00:00",
+            "end": "2021-04-24 23:59:59"
+        }, {
+            "start": "2021-04-25 00:00:00",
+            "end": "2021-04-25 23:59:59"
+        }, {
+            "start": "2021-04-26 00:00:00",
+            "end": "2021-04-26 23:59:59"
+        }, {
+            "start": "2021-04-27 00:00:00",
+            "end": "2021-04-27 23:59:59"
+        }, {
+            "start": "2021-05-08 00:00:00",
+            "end": "2021-05-08 23:59:59"
+        }, {
+            "start": "2021-05-17 00:00:00",
+            "end": "2021-05-17 23:59:59"
+        }, {
+            "start": "2021-05-20 00:00:00",
+            "end": "2021-05-20 23:59:59"
+        }, {
+            "start": "2021-05-23 00:00:00",
+            "end": "2021-05-23 23:59:59"
+        }, {
+            "start": "2021-06-09 00:00:00",
+            "end": "2021-06-09 23:59:59"
+        }, {
+            "start": "2021-06-10 00:00:00",
+            "end": "2021-06-10 23:59:59"
+        }, {
+            "start": "2021-06-14 00:00:00",
+            "end": "2021-06-14 23:59:59"
+        }, {
+            "start": "2021-06-15 00:00:00",
+            "end": "2021-06-15 23:59:59"
+        }, {
+            "start": "2021-06-20 00:00:00",
+            "end": "2021-06-20 23:59:59"
+        }, {
+            "start": "2021-06-21 00:00:00",
+            "end": "2021-06-21 23:59:59"
+        }, {
+            "start": "2021-06-22 00:00:00",
+            "end": "2021-06-22 23:59:59"
+        }, {
+            "start": "2021-06-23 00:00:00",
+            "end": "2021-06-23 23:59:59"
+        }, {
+            "start": "2021-06-24 00:00:00",
+            "end": "2021-06-24 23:59:59"
+        }, {
+            "start": "2021-06-26 00:00:00",
+            "end": "2021-06-26 23:59:59"
+        }, {
+            "start": "2021-06-27 00:00:00",
+            "end": "2021-06-27 23:59:59"
+        }, {
+            "start": "2021-06-28 00:00:00",
+            "end": "2021-06-28 23:59:59"
+        }, {
+            "start": "2021-06-29 00:00:00",
+            "end": "2021-06-29 23:59:59"
+        }, {
+            "start": "2021-07-04 00:00:00",
+            "end": "2021-07-04 23:59:59"
+        }, {
+            "start": "2021-07-05 00:00:00",
+            "end": "2021-07-05 23:59:59"
+        }, {
+            "start": "2021-07-06 00:00:00",
+            "end": "2021-07-06 23:59:59"
+        }, {
+            "start": "2021-07-07 00:00:00",
+            "end": "2021-07-07 23:59:59"
+        }, {
+            "start": "2021-07-23 00:00:00",
+            "end": "2021-07-23 23:59:59"
+        }, {
+            "start": "2021-07-26 00:00:00",
+            "end": "2021-07-26 23:59:59"
+        }, {
+            "start": "2021-08-03 00:00:00",
+            "end": "2021-08-03 23:59:59"
+        }, {
+            "start": "2021-08-04 00:00:00",
+            "end": "2021-08-04 23:59:59"
+        }, {
+            "start": "2021-08-07 00:00:00",
+            "end": "2021-08-07 23:59:59"
+        }, {
+            "start": "2021-08-28 00:00:00",
+            "end": "2021-08-28 23:59:59"
+        }, {
+            "start": "2021-08-29 00:00:00",
+            "end": "2021-08-29 23:59:59"
+        }, {
+            "start": "2021-08-30 00:00:00",
+            "end": "2021-08-30 23:59:59"
+        }, {
+            "start": "2021-09-01 00:00:00",
+            "end": "2021-09-01 23:59:59"
+        }, {
+            "start": "2021-09-02 00:00:00",
+            "end": "2021-09-02 23:59:59"
+        }, {
+            "start": "2021-09-05 00:00:00",
+            "end": "2021-09-05 23:59:59"
+        }]
+    },
+    "summary_default": {
+        "items": [{
+            "target": "valid_interval_minutes",
+            "title": "Valid Interval(Min)",
+            "type": "select",
+            "mode": "singular",
+            "options": ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47", "48", "49", "50", "51", "52", "53", "54", "55", "56", "57", "58", "59", "60"],
+            "selected": null
+        }, {
+            "target": "group_by",
+            "title": "Group By",
+            "type": "select",
+            "mode": "subItem",
+            "options": ["period"],
+            "subItem": {
+                "target": "group_value",
+                "title": "Group Value",
+                "type": "select",
+                "mode": "singular",
+                "options": [{
+                    "period": ["1h", "2h", "4h"]
+                }],
+                "selected": "4h"
+            },
+            "selected": "period"
+        }, {
+            "target": "filter_key",
+            "title": "Filter Key",
+            "type": "select",
+            "mode": "subItem",
+            "options": [],
+            "subItem": {
+                "target": "filter_value",
+                "title": "Filter Value",
+                "type": "select",
+                "mode": "singular",
+                "options": [],
+                "selected": null
+            },
+            "selected": null
+        }],
+        "data": {
+            "disp_order": ["No.", "Date", "Z Sensor Meas. BL Delta Max", "Z Sensor Meas. BC Delta Max", "Z Sensor Meas. BR Delta Max", "Z Sensor Meas. FL Delta Max", "Z Sensor Meas. FC Delta Max", "Z Sensor Meas. FR Delta Max", "L V/T AVE", "L V/T Delta Max", "L H/S AVE", "L H/S Delta Max", "C V/T AVE", "C V/T Delta Max", "C H/S AVE", "C H/S Delta Max", "R V/T AVE", "R V/T Delta Max", "R H/S AVE", "R H/S Delta Max", "Z AVE", "Z Delta Max", "Pitch AVE", "Pitch Delta Max", "Roll AVE", "Roll Delta Max"],
+            "disp_graph_f": {
+                "No.": false,
+                "Date": false,
+                "Z Sensor Meas. BL Delta Max": true,
+                "Z Sensor Meas. BC Delta Max": true,
+                "Z Sensor Meas. BR Delta Max": true,
+                "Z Sensor Meas. FL Delta Max": true,
+                "Z Sensor Meas. FC Delta Max": true,
+                "Z Sensor Meas. FR Delta Max": true,
+                "L V/T AVE": true,
+                "L V/T Delta Max": true,
+                "L H/S AVE": true,
+                "L H/S Delta Max": true,
+                "C V/T AVE": true,
+                "C V/T Delta Max": true,
+                "C H/S AVE": true,
+                "C H/S Delta Max": true,
+                "R V/T AVE": true,
+                "R V/T Delta Max": true,
+                "R H/S AVE": true,
+                "R H/S Delta Max": true,
+                "Z AVE": true,
+                "Z Delta Max": true,
+                "Pitch AVE": true,
+                "Pitch Delta Max": true,
+                "Roll AVE": true,
+                "Roll Delta Max": true
+            },
+            "summary": {
+                "0": {
+                    "No.": 1,
+                    "Date": "2021-04-26 08:00:00",
+                    "Z Sensor Meas. BL Delta Max": 636.0,
+                    "Z Sensor Meas. BC Delta Max": 333.0,
+                    "Z Sensor Meas. BR Delta Max": 669.0,
+                    "Z Sensor Meas. FL Delta Max": 302.0,
+                    "Z Sensor Meas. FC Delta Max": 216.0,
+                    "Z Sensor Meas. FR Delta Max": 503.0,
+                    "L V/T Delta Max": 1776.0,
+                    "L H/S Delta Max": 4338.0,
+                    "C V/T Delta Max": 1390.0,
+                    "C H/S Delta Max": 579.0,
+                    "R V/T Delta Max": 3842.0,
+                    "R H/S Delta Max": 571.0,
+                    "Z Delta Max": 368.0,
+                    "Pitch Delta Max": 1831.0,
+                    "Roll Delta Max": 1447.0,
+                    "L V/T AVE": 724.0,
+                    "L H/S AVE": -7171.0,
+                    "C V/T AVE": -1421.0,
+                    "C H/S AVE": 4753.5,
+                    "R V/T AVE": -5417.0,
+                    "R H/S AVE": -3010.5,
+                    "Z AVE": -14467.0,
+                    "Pitch AVE": 4718.5,
+                    "Roll AVE": -4261.5
+                },
+                "1": {
+                    "No.": 2,
+                    "Date": "2021-04-26 12:00:00",
+                    "Z Sensor Meas. BL Delta Max": 714.0,
+                    "Z Sensor Meas. BC Delta Max": 1082.0,
+                    "Z Sensor Meas. BR Delta Max": 1198.0,
+                    "Z Sensor Meas. FL Delta Max": 1247.0,
+                    "Z Sensor Meas. FC Delta Max": 1460.0,
+                    "Z Sensor Meas. FR Delta Max": 1196.0,
+                    "L V/T Delta Max": 1843.0,
+                    "L H/S Delta Max": 1927.0,
+                    "C V/T Delta Max": 2965.0,
+                    "C H/S Delta Max": 4931.0,
+                    "R V/T Delta Max": 3512.0,
+                    "R H/S Delta Max": 5645.0,
+                    "Z Delta Max": 2282.0,
+                    "Pitch Delta Max": 2651.0,
+                    "Roll Delta Max": 1585.0,
+                    "L V/T AVE": -373.3333333333333,
+                    "L H/S AVE": -3512.3333333333335,
+                    "C V/T AVE": 639.3333333333334,
+                    "C H/S AVE": 9320.0,
+                    "R V/T AVE": -2737.3333333333335,
+                    "R H/S AVE": 1604.0,
+                    "Z AVE": -13282.666666666666,
+                    "Pitch AVE": 3151.6666666666665,
+                    "Roll AVE": -5224.0
+                },
+                "2": {
+                    "No.": 3,
+                    "Date": "2021-04-26 16:00:00",
+                    "Z Sensor Meas. BL Delta Max": 1393.0,
+                    "Z Sensor Meas. BC Delta Max": 1378.0,
+                    "Z Sensor Meas. BR Delta Max": 1066.0,
+                    "Z Sensor Meas. FL Delta Max": 981.0,
+                    "Z Sensor Meas. FC Delta Max": 862.0,
+                    "Z Sensor Meas. FR Delta Max": 632.0,
+                    "L V/T Delta Max": 4774.0,
+                    "L H/S Delta Max": 1555.0,
+                    "C V/T Delta Max": 1719.0,
+                    "C H/S Delta Max": 2364.0,
+                    "R V/T Delta Max": 3038.0,
+                    "R H/S Delta Max": 1162.0,
+                    "Z Delta Max": 428.0,
+                    "Pitch Delta Max": 2927.0,
+                    "Roll Delta Max": 1664.0,
+                    "L V/T AVE": 3013.0,
+                    "L H/S AVE": -3115.0,
+                    "C V/T AVE": 1379.0,
+                    "C H/S AVE": 10986.0,
+                    "R V/T AVE": -3807.0,
+                    "R H/S AVE": -297.0,
+                    "Z AVE": -14687.0,
+                    "Pitch AVE": 1245.0,
+                    "Roll AVE": -4119.0
+                },
+                "3": {
+                    "No.": 4,
+                    "Date": "2021-04-26 20:00:00",
+                    "Z Sensor Meas. BL Delta Max": 191.0,
+                    "Z Sensor Meas. BC Delta Max": 113.0,
+                    "Z Sensor Meas. BR Delta Max": 64.0,
+                    "Z Sensor Meas. FL Delta Max": 643.0,
+                    "Z Sensor Meas. FC Delta Max": 494.0,
+                    "Z Sensor Meas. FR Delta Max": 671.0,
+                    "L V/T Delta Max": 2471.0,
+                    "L H/S Delta Max": 3045.0,
+                    "C V/T Delta Max": 1517.0,
+                    "C H/S Delta Max": 1541.0,
+                    "R V/T Delta Max": 3357.0,
+                    "R H/S Delta Max": 1459.0,
+                    "Z Delta Max": 1033.0,
+                    "Pitch Delta Max": 127.0,
+                    "Roll Delta Max": 750.0,
+                    "L V/T AVE": 542.0,
+                    "L H/S AVE": -70.0,
+                    "C V/T AVE": 2896.0,
+                    "C H/S AVE": 12527.0,
+                    "R V/T AVE": -450.0,
+                    "R H/S AVE": 1162.0,
+                    "Z AVE": -13654.0,
+                    "Pitch AVE": 1118.0,
+                    "Roll AVE": -4869.0
+                }
+            }
+        }
+    },
+    "detail_default": {
+        "data": {
+            "disp_order": ["index", "log_time", "device", "process", "bl", "bc", "br", "fl", "fc", "fr", "left_vt", "left_hs", "center_vt", "center_hs", "right_vt", "right_hs", "z", "pitch", "roll"],
+            "disp_graph_f": {
+                "bl": true,
+                "bc": true,
+                "br": true,
+                "fl": true,
+                "fc": true,
+                "fr": true,
+                "left_vt": true,
+                "left_hs": true,
+                "center_vt": true,
+                "center_hs": true,
+                "right_vt": true,
+                "right_hs": true,
+                "z": true,
+                "pitch": true,
+                "roll": true,
+                "process": false,
+                "device": false,
+                "log_time": false,
+                "index": false
+            },
+            "detail": {
+                "0": {
+                    "index": 1,
+                    "bl": 4241.0,
+                    "bc": 2861.0,
+                    "br": 1893.0,
+                    "fl": -13443.0,
+                    "fc": 3003.0,
+                    "fr": 2208.0,
+                    "left_vt": -164.0,
+                    "left_hs": -9340.0,
+                    "center_vt": -726.0,
+                    "center_hs": 4464.0,
+                    "right_vt": -3496.0,
+                    "right_hs": -3296.0,
+                    "z": -14651.0,
+                    "pitch": 3803.0,
+                    "roll": -4985.0,
+                    "process": "Y_SA",
+                    "device": "Y_SA_2[M",
+                    "log_time": "2021-04-26 09:31:29"
+                },
+                "1": {
+                    "index": 2,
+                    "bl": 3605.0,
+                    "bc": 2528.0,
+                    "br": 1224.0,
+                    "fl": -13745.0,
+                    "fc": 2787.0,
+                    "fr": 2711.0,
+                    "left_vt": 1612.0,
+                    "left_hs": -5002.0,
+                    "center_vt": -2116.0,
+                    "center_hs": 5043.0,
+                    "right_vt": -7338.0,
+                    "right_hs": -2725.0,
+                    "z": -14283.0,
+                    "pitch": 5634.0,
+                    "roll": -3538.0,
+                    "process": "DNor",
+                    "device": "CiSubX[M",
+                    "log_time": "2021-04-26 10:47:21"
+                },
+                "2": {
+                    "index": 3,
+                    "bl": 2891.0,
+                    "bc": 2239.0,
+                    "br": 1238.0,
+                    "fl": -14151.0,
+                    "fc": 2686.0,
+                    "fr": 2329.0,
+                    "left_vt": 559.0,
+                    "left_hs": -3075.0,
+                    "center_vt": 849.0,
+                    "center_hs": 9974.0,
+                    "right_vt": -3826.0,
+                    "right_hs": 2920.0,
+                    "z": -12001.0,
+                    "pitch": 2983.0,
+                    "roll": -5123.0,
+                    "process": "DRan4j",
+                    "device": "CiSubX[M",
+                    "log_time": "2021-04-26 13:37:59"
+                },
+                "3": {
+                    "index": 4,
+                    "bl": 2212.0,
+                    "bc": 1157.0,
+                    "br": 40.0,
+                    "fl": -15398.0,
+                    "fc": 1226.0,
+                    "fr": 1133.0,
+                    "left_vt": 82.0,
+                    "left_hs": -2792.0,
+                    "center_vt": 1409.0,
+                    "center_hs": 9364.0,
+                    "right_vt": -3617.0,
+                    "right_hs": 1027.0,
+                    "z": -13588.0,
+                    "pitch": 2300.0,
+                    "roll": -4766.0,
+                    "process": "DRan4j",
+                    "device": "CiSubX[M",
+                    "log_time": "2021-04-26 14:25:17"
+                },
+                "4": {
+                    "index": 5,
+                    "bl": 1873.0,
+                    "bc": 915.0,
+                    "br": -159.0,
+                    "fl": -15623.0,
+                    "fc": 867.0,
+                    "fr": 376.0,
+                    "left_vt": -1761.0,
+                    "left_hs": -4670.0,
+                    "center_vt": -340.0,
+                    "center_hs": 8622.0,
+                    "right_vt": -769.0,
+                    "right_hs": 865.0,
+                    "z": -14259.0,
+                    "pitch": 4172.0,
+                    "roll": -5783.0,
+                    "process": "DRan4j",
+                    "device": "CiSubX[M",
+                    "log_time": "2021-04-26 14:41:29"
+                }
+            }
+        }
+    }
+}

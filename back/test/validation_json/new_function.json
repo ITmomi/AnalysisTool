@@ -1,0 +1,116 @@
+{
+    "func": {
+        "category_id": 1,
+        "title": "Test",
+        "source_type": "remote",
+        "info": {
+            "db_id": 2,
+            "table_name": "adc_measurement",
+            "equipment_name": "BSOT_Fab1_MPA_1",
+            "period_start": "2019-05-21 12:25:35",
+            "period_end": "2019-05-22 12:25:35"
+        },
+        "script": {
+            "file_name": "preprocess.py",
+            "use_script": false
+        }
+    },
+    "convert": {},
+    "filter": {},
+    "analysis": {
+        "type": "none",
+        "setting": {
+            "items": [
+                {
+                    "disp_order": "1",
+                    "source_col": "flt",
+                    "title": "FLT Delta Max",
+                    "group_analysis": "delta.abs.max",
+                    "group_analysis_type": "sequencial",
+                    "total_analysis": "max",
+                    "total_analysis_type": "max"
+                },
+                {
+                    "disp_order": "2",
+                    "source_col": "blt",
+                    "title": "BLT Sum",
+                    "group_analysis": "data.sum()*100",
+                    "group_analysis_type": "custom",
+                    "total_analysis": "max",
+                    "total_analysis_type": "max"
+                }
+            ],
+            "filter_default": [
+                {
+                    "key": "device",
+                    "val": ["device1"]
+                },
+                {
+                "key": "process",
+                "val": ["process1"]
+                }
+            ],
+            "aggregation_default": {
+                "type": "period",
+                "val": "4h"
+            }
+        },
+        "script": {
+            "db_id": null,
+            "sql": "",
+            "file_name": "preprocess.py",
+            "use_script": false
+        }
+    },
+    "visualization": {
+        "function_graph_type": [
+            {
+                "id": null,
+                "name": "default",
+                "script": "",
+                "type": "system"
+            },
+            {
+                "id": null,
+                "name": "User Graph1",
+                "script": "",
+                "type": "user"
+            }
+        ],
+        "items": [
+            {
+                "id" : null,
+                "type": [
+                    "bar",
+                    "line"
+                ],
+                "x_axis": "test",
+                "y_axis": ["test"],
+                "z_axis": "test",
+                "title": "",
+                "x_range_max": 1,
+                "x_range_min": 0,
+                "y_range_max": 1,
+                "y_range_min": 0,
+                "z_range_max": 1,
+                "z_range_min": 0
+            },
+            {
+                "id": null,
+                "type": [
+                    "User Graph1"
+                ],
+                "x_axis": "test",
+                "y_axis": ["test"],
+                "z_axis": "test",
+                "title": "",
+                "x_range_max": 1,
+                "x_range_min": 0,
+                "y_range_max": 1,
+                "y_range_min": 0,
+                "z_range_max": 1,
+                "z_range_min": 0
+            }
+        ]
+    }
+}

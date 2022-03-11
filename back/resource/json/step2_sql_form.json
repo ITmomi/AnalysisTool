@@ -1,0 +1,53 @@
+[
+    {
+        "title": "1. Select Source",
+        "items": [
+            {
+                "target": "source",
+                "title": "From",
+                "type": "select",
+                "mode": "singular",
+                "options": []
+            }
+        ]
+    },
+    {
+        "title": "2. Select Data Source",
+        "items": [
+            {
+                "target": "db_id",
+                "title": "From",
+                "type": "select",
+                "mode": "singular",
+                "options": []
+            }
+        ]
+    },
+    {
+        "title": "3. Input SQL",
+        "items": [
+            {
+                "target": "sql",
+                "title": "",
+                "type": "textarea",
+                "content": ""
+            }
+        ]
+    },
+    {
+        "title": "4. Select Preprocessing Script",
+        "items": [
+            {
+                "target": "file_name",
+                "title": "Script File",
+                "type": "file"
+            },
+            {
+                "target": "use_script",
+                "title": "use script",
+                "type": "switch",
+                "value": false
+            }
+        ]
+    }
+]

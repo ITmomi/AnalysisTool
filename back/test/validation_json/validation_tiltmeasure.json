@@ -1,0 +1,965 @@
+{
+    "lists_default":{
+        "items": [{
+            "target": "one_period",
+            "title": "One Period",
+            "type": "select",
+            "mode": "subItem",
+            "options": ["12h", "24h", "7d", "14d", "1m"],
+            "subItem": {
+                "target": "adj_period",
+                "title": "Adjust Period",
+                "type": "select",
+                "mode": "singular",
+                "options": [{
+                    "12h": ["0h", "1h", "2h", "3h", "4h", "5h", "6h", "7h", "8h", "9h", "10h", "11h", "12h", "13h", "14h", "15h", "16h", "17h", "18h", "19h", "20h", "21h", "22h", "23h"]
+                }, {
+                    "24h": ["0h", "1h", "2h", "3h", "4h", "5h", "6h", "7h", "8h", "9h", "10h", "11h", "12h", "13h", "14h", "15h", "16h", "17h", "18h", "19h", "20h", "21h", "22h", "23h"]
+                }, {
+                    "7d": ["0d", "1d", "2d", "3d", "4d", "5d", "6d", "7d", "8d", "9d", "10d", "11d", "12d", "13d", "14d", "15d", "16d", "17d", "18d", "19d", "20d", "21d", "22d", "23d", "24d", "25d", "26d", "27d", "28d", "29d", "30d", "31d"]
+                }, {
+                    "14d": ["0d", "1d", "2d", "3d", "4d", "5d", "6d", "7d", "8d", "9d", "10d", "11d", "12d", "13d", "14d", "15d", "16d", "17d", "18d", "19d", "20d", "21d", "22d", "23d", "24d", "25d", "26d", "27d", "28d", "29d", "30d", "31d"]
+                }, {
+                    "1m": ["0d", "1d", "2d", "3d", "4d", "5d", "6d", "7d", "8d", "9d", "10d", "11d", "12d", "13d", "14d", "15d", "16d", "17d", "18d", "19d", "20d", "21d", "22d", "23d", "24d", "25d", "26d", "27d", "28d", "29d", "30d", "31d"]
+                }],
+                "selected": "0d"
+            },
+            "selected": "1m"
+        }, {
+            "target": "list_group",
+            "title": "List Group",
+            "type": "select",
+            "mode": "singular",
+            "options": ["job"],
+            "selected": null
+        }],
+        "data": [{
+            "start": "2021-01-06 00:00:00",
+            "end": "2021-02-05 23:59:59"
+        }, {
+            "start": "2021-02-06 00:00:00",
+            "end": "2021-03-05 23:59:59"
+        }, {
+            "start": "2021-03-06 00:00:00",
+            "end": "2021-04-05 23:59:59"
+        }, {
+            "start": "2021-04-06 00:00:00",
+            "end": "2021-05-05 23:59:59"
+        }, {
+            "start": "2021-05-06 00:00:00",
+            "end": "2021-06-05 23:59:59"
+        }, {
+            "start": "2021-06-06 00:00:00",
+            "end": "2021-07-05 23:59:59"
+        }, {
+            "start": "2021-07-06 00:00:00",
+            "end": "2021-08-05 23:59:59"
+        }, {
+            "start": "2021-08-06 00:00:00",
+            "end": "2021-09-05 23:59:59"
+        }, {
+            "start": "2021-09-06 00:00:00",
+            "end": "2021-10-05 23:59:59"
+        }, {
+            "start": "2021-10-06 00:00:00",
+            "end": "2021-11-05 23:59:59"
+        }, {
+            "start": "2021-11-06 00:00:00",
+            "end": "2021-12-05 23:59:59"
+        }, {
+            "start": "2021-12-06 00:00:00",
+            "end": "2022-01-05 23:59:59"
+        }]
+    },
+    "summary_default": {
+        "items": [{
+            "target": "valid_interval_minutes",
+            "title": "Valid Interval(Min)",
+            "type": "select",
+            "mode": "singular",
+            "options": ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47", "48", "49", "50", "51", "52", "53", "54", "55", "56", "57", "58", "59", "60"],
+            "selected": null
+        }, {
+            "target": "group_by",
+            "title": "Group By",
+            "type": "select",
+            "mode": "subItem",
+            "options": ["period"],
+            "subItem": {
+                "target": "group_value",
+                "title": "Group Value",
+                "type": "select",
+                "mode": "singular",
+                "options": [{
+                    "period": ["1h", "2h", "4h"]
+                }],
+                "selected": "1d"
+            },
+            "selected": "period"
+        }, {
+            "target": "filter_key",
+            "title": "Filter Key",
+            "type": "select",
+            "mode": "subItem",
+            "options": [],
+            "subItem": {
+                "target": "filter_value",
+                "title": "Filter Value",
+                "type": "select",
+                "mode": "singular",
+                "options": [],
+                "selected": null
+            },
+            "selected": null
+        }],
+        "data": {
+            "disp_order": ["No.", "Date", "FLT Delta Max", "FRT Delta Max", "BLT Delta Max", "BRT Delta Max", "Pitching AVE", "Pitching Delta Max", "Rolling AVE", "Rolling Delta Max", "Torsion AVE", "Torsion Delta Max"],
+            "disp_graph_f": {
+                "No.": false,
+                "Date": false,
+                "FLT Delta Max": true,
+                "FRT Delta Max": true,
+                "BLT Delta Max": true,
+                "BRT Delta Max": true,
+                "Pitching AVE": true,
+                "Pitching Delta Max": true,
+                "Rolling AVE": true,
+                "Rolling Delta Max": true,
+                "Torsion AVE": true,
+                "Torsion Delta Max": true
+            },
+            "summary": {
+                "0": {
+                    "No.": 1,
+                    "Date": "2021-01-06 00:00:00",
+                    "FLT Delta Max": 5301.0,
+                    "FRT Delta Max": 3630.0,
+                    "BLT Delta Max": 3473.0,
+                    "BRT Delta Max": 5022.0,
+                    "Pitching Delta Max": 932.0,
+                    "Rolling Delta Max": 302.0,
+                    "Torsion Delta Max": 61.0,
+                    "Pitching AVE": 185.0,
+                    "Rolling AVE": -2158.0,
+                    "Torsion AVE": -11547.5
+                },
+                "1": {
+                    "No.": 2,
+                    "Date": "2021-01-07 00:00:00",
+                    "FLT Delta Max": 11511.0,
+                    "FRT Delta Max": 24458.0,
+                    "BLT Delta Max": 24705.0,
+                    "BRT Delta Max": 24074.0,
+                    "Pitching Delta Max": 1690.0,
+                    "Rolling Delta Max": 1392.0,
+                    "Torsion Delta Max": 5617.0,
+                    "Pitching AVE": 556.75,
+                    "Rolling AVE": -1230.25,
+                    "Torsion AVE": -8996.0
+                },
+                "2": {
+                    "No.": 3,
+                    "Date": "2021-01-08 00:00:00",
+                    "FLT Delta Max": 7901.0,
+                    "FRT Delta Max": 9706.0,
+                    "BLT Delta Max": 6329.0,
+                    "BRT Delta Max": 5442.0,
+                    "Pitching Delta Max": 822.0,
+                    "Rolling Delta Max": 1162.0,
+                    "Torsion Delta Max": 634.0,
+                    "Pitching AVE": 605.75,
+                    "Rolling AVE": -1920.125,
+                    "Torsion AVE": -11417.0
+                },
+                "3": {
+                    "No.": 4,
+                    "Date": "2021-01-10 00:00:00",
+                    "FLT Delta Max": 9797.0,
+                    "FRT Delta Max": 26499.0,
+                    "BLT Delta Max": 20588.0,
+                    "BRT Delta Max": 21529.0,
+                    "Pitching Delta Max": 329.0,
+                    "Rolling Delta Max": 1655.0,
+                    "Torsion Delta Max": 7880.0,
+                    "Pitching AVE": 105.5,
+                    "Rolling AVE": -464.0,
+                    "Torsion AVE": -4236.5
+                },
+                "4": {
+                    "No.": 5,
+                    "Date": "2021-01-12 00:00:00",
+                    "FLT Delta Max": 5960.0,
+                    "FRT Delta Max": 18879.0,
+                    "BLT Delta Max": 28529.0,
+                    "BRT Delta Max": 27409.0,
+                    "Pitching Delta Max": 1665.0,
+                    "Rolling Delta Max": 1106.0,
+                    "Torsion Delta Max": 7019.0,
+                    "Pitching AVE": 1113.0,
+                    "Rolling AVE": -1840.5,
+                    "Torsion AVE": -11611.75
+                },
+                "5": {
+                    "No.": 6,
+                    "Date": "2021-01-13 00:00:00",
+                    "FLT Delta Max": 9824.0,
+                    "FRT Delta Max": 26178.0,
+                    "BLT Delta Max": 28292.0,
+                    "BRT Delta Max": 27476.0,
+                    "Pitching Delta Max": 1707.0,
+                    "Rolling Delta Max": 1674.0,
+                    "Torsion Delta Max": 7430.0,
+                    "Pitching AVE": 818.7857142857143,
+                    "Rolling AVE": -1447.5,
+                    "Torsion AVE": -9540.357142857143
+                },
+                "6": {
+                    "No.": 7,
+                    "Date": "2021-01-14 00:00:00",
+                    "FLT Delta Max": 14228.0,
+                    "FRT Delta Max": 31982.0,
+                    "BLT Delta Max": 26627.0,
+                    "BRT Delta Max": 25130.0,
+                    "Pitching Delta Max": 1421.0,
+                    "Rolling Delta Max": 1984.0,
+                    "Torsion Delta Max": 7175.0,
+                    "Pitching AVE": 564.75,
+                    "Rolling AVE": -1127.8333333333333,
+                    "Torsion AVE": -8042.958333333333
+                },
+                "7": {
+                    "No.": 8,
+                    "Date": "2021-01-15 00:00:00",
+                    "FLT Delta Max": 1218.0,
+                    "FRT Delta Max": 6479.0,
+                    "BLT Delta Max": 6404.0,
+                    "BRT Delta Max": 982.0,
+                    "Pitching Delta Max": 776.0,
+                    "Rolling Delta Max": 1055.0,
+                    "Torsion Delta Max": 513.0,
+                    "Pitching AVE": 942.6666666666666,
+                    "Rolling AVE": -1836.5833333333333,
+                    "Torsion AVE": -11463.75
+                },
+                "8": {
+                    "No.": 9,
+                    "Date": "2021-01-16 00:00:00",
+                    "FLT Delta Max": 6418.0,
+                    "FRT Delta Max": 4610.0,
+                    "BLT Delta Max": 3185.0,
+                    "BRT Delta Max": 5568.0,
+                    "Pitching Delta Max": 776.0,
+                    "Rolling Delta Max": 563.0,
+                    "Torsion Delta Max": 387.0,
+                    "Pitching AVE": 221.83333333333334,
+                    "Rolling AVE": -2075.6666666666665,
+                    "Torsion AVE": -11542.166666666666
+                },
+                "9": {
+                    "No.": 10,
+                    "Date": "2021-01-17 00:00:00",
+                    "FLT Delta Max": 4271.0,
+                    "FRT Delta Max": 11211.0,
+                    "BLT Delta Max": 6972.0,
+                    "BRT Delta Max": 2397.0,
+                    "Pitching Delta Max": 921.0,
+                    "Rolling Delta Max": 1263.0,
+                    "Torsion Delta Max": 207.0,
+                    "Pitching AVE": 1107.5,
+                    "Rolling AVE": -1671.0,
+                    "Torsion AVE": -11434.5
+                },
+                "10": {
+                    "No.": 11,
+                    "Date": "2021-01-18 00:00:00",
+                    "FLT Delta Max": 1362.0,
+                    "FRT Delta Max": 8346.0,
+                    "BLT Delta Max": 7918.0,
+                    "BRT Delta Max": 2172.0,
+                    "Pitching Delta Max": 915.0,
+                    "Rolling Delta Max": 1298.0,
+                    "Torsion Delta Max": 480.0,
+                    "Pitching AVE": 1037.5,
+                    "Rolling AVE": -1764.0,
+                    "Torsion AVE": -11383.5
+                },
+                "11": {
+                    "No.": 12,
+                    "Date": "2021-01-19 00:00:00",
+                    "FLT Delta Max": 8666.0,
+                    "FRT Delta Max": 24233.0,
+                    "BLT Delta Max": 16904.0,
+                    "BRT Delta Max": 18901.0,
+                    "Pitching Delta Max": 433.0,
+                    "Rolling Delta Max": 1648.0,
+                    "Torsion Delta Max": 6784.0,
+                    "Pitching AVE": 183.5,
+                    "Rolling AVE": -564.0,
+                    "Torsion AVE": -5177.0
+                },
+                "12": {
+                    "No.": 13,
+                    "Date": "2021-01-20 00:00:00",
+                    "FLT Delta Max": 12864.0,
+                    "FRT Delta Max": 27743.0,
+                    "BLT Delta Max": 20267.0,
+                    "BRT Delta Max": 21810.0,
+                    "Pitching Delta Max": 740.0,
+                    "Rolling Delta Max": 1787.0,
+                    "Torsion Delta Max": 6571.0,
+                    "Pitching AVE": 363.4166666666667,
+                    "Rolling AVE": -1430.4166666666667,
+                    "Torsion AVE": -9320.75
+                },
+                "13": {
+                    "No.": 14,
+                    "Date": "2021-01-21 00:00:00",
+                    "FLT Delta Max": 1240.0,
+                    "FRT Delta Max": 8493.0,
+                    "BLT Delta Max": 6279.0,
+                    "BRT Delta Max": 1748.0,
+                    "Pitching Delta Max": 677.0,
+                    "Rolling Delta Max": 1317.0,
+                    "Torsion Delta Max": 417.0,
+                    "Pitching AVE": 904.75,
+                    "Rolling AVE": -1718.125,
+                    "Torsion AVE": -11258.75
+                },
+                "14": {
+                    "No.": 15,
+                    "Date": "2021-01-22 00:00:00",
+                    "FLT Delta Max": 11510.0,
+                    "FRT Delta Max": 27912.0,
+                    "BLT Delta Max": 26276.0,
+                    "BRT Delta Max": 25282.0,
+                    "Pitching Delta Max": 1218.0,
+                    "Rolling Delta Max": 1772.0,
+                    "Torsion Delta Max": 6957.0,
+                    "Pitching AVE": 575.5,
+                    "Rolling AVE": -1475.875,
+                    "Torsion AVE": -9669.875
+                },
+                "15": {
+                    "No.": 16,
+                    "Date": "2021-01-23 00:00:00",
+                    "FLT Delta Max": 9924.0,
+                    "FRT Delta Max": 25888.0,
+                    "BLT Delta Max": 20086.0,
+                    "BRT Delta Max": 21729.0,
+                    "Pitching Delta Max": 889.0,
+                    "Rolling Delta Max": 1651.0,
+                    "Torsion Delta Max": 7161.0,
+                    "Pitching AVE": 310.7142857142857,
+                    "Rolling AVE": -655.7857142857143,
+                    "Torsion AVE": -5792.642857142857
+                },
+                "16": {
+                    "No.": 17,
+                    "Date": "2021-01-24 00:00:00",
+                    "FLT Delta Max": 6665.0,
+                    "FRT Delta Max": 16003.0,
+                    "BLT Delta Max": 25881.0,
+                    "BRT Delta Max": 23247.0,
+                    "Pitching Delta Max": 1417.0,
+                    "Rolling Delta Max": 1304.0,
+                    "Torsion Delta Max": 5986.0,
+                    "Pitching AVE": 943.0,
+                    "Rolling AVE": -1625.0,
+                    "Torsion AVE": -11154.0
+                },
+                "17": {
+                    "No.": 18,
+                    "Date": "2021-01-25 00:00:00",
+                    "FLT Delta Max": 651.0,
+                    "FRT Delta Max": 7043.0,
+                    "BLT Delta Max": 6672.0,
+                    "BRT Delta Max": 456.0,
+                    "Pitching Delta Max": 691.0,
+                    "Rolling Delta Max": 1362.0,
+                    "Torsion Delta Max": 350.0,
+                    "Pitching AVE": 891.5,
+                    "Rolling AVE": -1678.0,
+                    "Torsion AVE": -11038.5
+                },
+                "18": {
+                    "No.": 19,
+                    "Date": "2021-01-26 00:00:00",
+                    "FLT Delta Max": 9835.0,
+                    "FRT Delta Max": 25302.0,
+                    "BLT Delta Max": 19790.0,
+                    "BRT Delta Max": 21337.0,
+                    "Pitching Delta Max": 613.0,
+                    "Rolling Delta Max": 1596.0,
+                    "Torsion Delta Max": 6960.0,
+                    "Pitching AVE": 705.75,
+                    "Rolling AVE": -1530.625,
+                    "Torsion AVE": -9663.0
+                },
+                "19": {
+                    "No.": 20,
+                    "Date": "2021-01-29 00:00:00",
+                    "FLT Delta Max": 6772.0,
+                    "FRT Delta Max": 18852.0,
+                    "BLT Delta Max": 23361.0,
+                    "BRT Delta Max": 22850.0,
+                    "Pitching Delta Max": 1101.0,
+                    "Rolling Delta Max": 1085.0,
+                    "Torsion Delta Max": 6295.0,
+                    "Pitching AVE": 857.5,
+                    "Rolling AVE": -1826.0,
+                    "Torsion AVE": -11330.5
+                },
+                "20": {
+                    "No.": 21,
+                    "Date": "2021-01-31 00:00:00",
+                    "FLT Delta Max": 7659.0,
+                    "FRT Delta Max": 4603.0,
+                    "BLT Delta Max": 3934.0,
+                    "BRT Delta Max": 6285.0,
+                    "Pitching Delta Max": 1081.0,
+                    "Rolling Delta Max": 607.0,
+                    "Torsion Delta Max": 179.0,
+                    "Pitching AVE": 143.375,
+                    "Rolling AVE": -2008.625,
+                    "Torsion AVE": -11630.625
+                },
+                "21": {
+                    "No.": 22,
+                    "Date": "2021-02-01 00:00:00",
+                    "FLT Delta Max": 3304.0,
+                    "FRT Delta Max": 9175.0,
+                    "BLT Delta Max": 6415.0,
+                    "BRT Delta Max": 1726.0,
+                    "Pitching Delta Max": 836.0,
+                    "Rolling Delta Max": 1025.0,
+                    "Torsion Delta Max": 404.0,
+                    "Pitching AVE": 1015.0,
+                    "Rolling AVE": -1735.0,
+                    "Torsion AVE": -11456.0
+                },
+                "22": {
+                    "No.": 23,
+                    "Date": "2021-02-02 00:00:00",
+                    "FLT Delta Max": 10667.0,
+                    "FRT Delta Max": 26987.0,
+                    "BLT Delta Max": 16677.0,
+                    "BRT Delta Max": 19185.0,
+                    "Pitching Delta Max": 810.0,
+                    "Rolling Delta Max": 1765.0,
+                    "Torsion Delta Max": 6906.0,
+                    "Pitching AVE": 202.75,
+                    "Rolling AVE": -480.5,
+                    "Torsion AVE": -4907.25
+                },
+                "23": {
+                    "No.": 24,
+                    "Date": "2021-02-04 00:00:00",
+                    "FLT Delta Max": 11228.0,
+                    "FRT Delta Max": 25655.0,
+                    "BLT Delta Max": 20715.0,
+                    "BRT Delta Max": 21538.0,
+                    "Pitching Delta Max": 478.0,
+                    "Rolling Delta Max": 1603.0,
+                    "Torsion Delta Max": 6802.0,
+                    "Pitching AVE": 343.125,
+                    "Rolling AVE": -1602.0,
+                    "Torsion AVE": -9824.25
+                },
+                "24": {
+                    "No.": 25,
+                    "Date": "2021-02-05 00:00:00",
+                    "FLT Delta Max": 15333.0,
+                    "FRT Delta Max": 32844.0,
+                    "BLT Delta Max": 22598.0,
+                    "BRT Delta Max": 25667.0,
+                    "Pitching Delta Max": 1029.0,
+                    "Rolling Delta Max": 1930.0,
+                    "Torsion Delta Max": 7221.0,
+                    "Pitching AVE": 197.875,
+                    "Rolling AVE": -2132.125,
+                    "Torsion AVE": -11359.875
+                }
+            }
+        }
+    },
+    "detail_default": {
+        "data": {
+            "disp_order": ["index", "log_time", "flt", "frt", "blt", "brt", "pitching", "rolling", "torsion"],
+            "disp_graph_f": {
+                "index": false,
+                "log_time": false,
+                "flt": true,
+                "frt": true,
+                "blt": true,
+                "brt": true,
+                "pitching": true,
+                "rolling": true,
+                "torsion": true
+            },
+            "detail": {
+                "0": {
+                    "index": 1,
+                    "log_time": "2021-01-14 08:57:52",
+                    "flt": 63777,
+                    "frt": 80733,
+                    "blt": 89547,
+                    "brt": 84046,
+                    "pitching": 1556,
+                    "rolling": -1073,
+                    "torsion": -11229
+                },
+                "1": {
+                    "index": 2,
+                    "log_time": "2021-01-14 08:58:06",
+                    "flt": 65094,
+                    "frt": 88788,
+                    "blt": 81861,
+                    "brt": 83411,
+                    "pitching": 609,
+                    "rolling": -2366,
+                    "torsion": -11072
+                },
+                "2": {
+                    "index": 3,
+                    "log_time": "2021-01-14 09:40:04",
+                    "flt": 62820,
+                    "frt": 81036,
+                    "blt": 88838,
+                    "brt": 84490,
+                    "pitching": 1577,
+                    "rolling": -1300,
+                    "torsion": -11282
+                },
+                "3": {
+                    "index": 4,
+                    "log_time": "2021-01-14 09:40:18",
+                    "flt": 64674,
+                    "frt": 88188,
+                    "blt": 82112,
+                    "brt": 82615,
+                    "pitching": 634,
+                    "rolling": -2251,
+                    "torsion": -11506
+                },
+                "4": {
+                    "index": 5,
+                    "log_time": "2021-01-14 10:34:11",
+                    "flt": 53651,
+                    "frt": 61044,
+                    "blt": 66010,
+                    "brt": 64219,
+                    "pitching": 846,
+                    "rolling": -524,
+                    "torsion": -4592
+                },
+                "5": {
+                    "index": 6,
+                    "log_time": "2021-01-14 10:34:24",
+                    "flt": 57971,
+                    "frt": 64464,
+                    "blt": 62548,
+                    "brt": 59129,
+                    "pitching": -41,
+                    "rolling": -287,
+                    "torsion": -4956
+                },
+                "6": {
+                    "index": 7,
+                    "log_time": "2021-01-14 11:00:09",
+                    "flt": 53508,
+                    "frt": 60747,
+                    "blt": 64965,
+                    "brt": 62939,
+                    "pitching": 744,
+                    "rolling": -488,
+                    "torsion": -4633
+                },
+                "7": {
+                    "index": 8,
+                    "log_time": "2021-01-14 11:00:23",
+                    "flt": 57695,
+                    "frt": 64198,
+                    "blt": 61770,
+                    "brt": 58566,
+                    "pitching": -84,
+                    "rolling": -309,
+                    "torsion": -4854
+                },
+                "8": {
+                    "index": 9,
+                    "log_time": "2021-01-14 11:42:02",
+                    "flt": 53426,
+                    "frt": 59703,
+                    "blt": 64709,
+                    "brt": 62867,
+                    "pitching": 787,
+                    "rolling": -415,
+                    "torsion": -4060
+                },
+                "9": {
+                    "index": 10,
+                    "log_time": "2021-01-14 11:42:16",
+                    "flt": 57695,
+                    "frt": 64116,
+                    "blt": 61166,
+                    "brt": 58044,
+                    "pitching": -141,
+                    "rolling": -309,
+                    "torsion": -4772
+                },
+                "10": {
+                    "index": 11,
+                    "log_time": "2021-01-14 12:03:12",
+                    "flt": 53497,
+                    "frt": 60092,
+                    "blt": 64658,
+                    "brt": 61976,
+                    "pitching": 711,
+                    "rolling": -366,
+                    "torsion": -4639
+                },
+                "11": {
+                    "index": 12,
+                    "log_time": "2021-01-14 12:03:25",
+                    "flt": 57203,
+                    "frt": 63635,
+                    "blt": 61166,
+                    "brt": 58116,
+                    "pitching": -84,
+                    "rolling": -316,
+                    "torsion": -4741
+                },
+                "12": {
+                    "index": 13,
+                    "log_time": "2021-01-14 14:28:53",
+                    "flt": 70750,
+                    "frt": 93071,
+                    "blt": 82325,
+                    "brt": 81186,
+                    "pitching": -16,
+                    "rolling": -1985,
+                    "torsion": -11730
+                },
+                "13": {
+                    "index": 14,
+                    "log_time": "2021-01-14 14:29:07",
+                    "flt": 67090,
+                    "frt": 91296,
+                    "blt": 84229,
+                    "brt": 84932,
+                    "pitching": 576,
+                    "rolling": -2335,
+                    "torsion": -11751
+                },
+                "14": {
+                    "index": 15,
+                    "log_time": "2021-01-14 16:08:40",
+                    "flt": 52862,
+                    "frt": 59314,
+                    "blt": 64975,
+                    "brt": 62274,
+                    "pitching": 821,
+                    "rolling": -351,
+                    "torsion": -4576
+                },
+                "15": {
+                    "index": 16,
+                    "log_time": "2021-01-14 16:08:53",
+                    "flt": 56794,
+                    "frt": 63267,
+                    "blt": 60787,
+                    "brt": 57850,
+                    "pitching": -77,
+                    "rolling": -331,
+                    "torsion": -4705
+                },
+                "16": {
+                    "index": 17,
+                    "log_time": "2021-01-14 17:15:20",
+                    "flt": 70496,
+                    "frt": 91766,
+                    "blt": 81804,
+                    "brt": 79761,
+                    "pitching": -37,
+                    "rolling": -1802,
+                    "torsion": -11657
+                },
+                "17": {
+                    "index": 18,
+                    "log_time": "2021-01-14 17:15:33",
+                    "flt": 66081,
+                    "frt": 90123,
+                    "blt": 83682,
+                    "brt": 84609,
+                    "pitching": 646,
+                    "rolling": -2341,
+                    "torsion": -11557
+                },
+                "18": {
+                    "index": 19,
+                    "log_time": "2021-01-14 17:27:18",
+                    "flt": 52883,
+                    "frt": 59652,
+                    "blt": 65119,
+                    "brt": 62764,
+                    "pitching": 836,
+                    "rolling": -413,
+                    "torsion": -4562
+                },
+                "19": {
+                    "index": 20,
+                    "log_time": "2021-01-14 17:27:32",
+                    "flt": 57101,
+                    "frt": 63307,
+                    "blt": 61330,
+                    "brt": 57747,
+                    "pitching": -72,
+                    "rolling": -245,
+                    "torsion": -4894
+                },
+                "20": {
+                    "index": 21,
+                    "log_time": "2021-01-14 20:04:35",
+                    "flt": 64153,
+                    "frt": 81464,
+                    "blt": 87957,
+                    "brt": 82877,
+                    "pitching": 1349,
+                    "rolling": -1146,
+                    "torsion": -11195
+                },
+                "21": {
+                    "index": 22,
+                    "log_time": "2021-01-14 20:04:48",
+                    "flt": 64926,
+                    "frt": 89125,
+                    "blt": 81221,
+                    "brt": 82633,
+                    "pitching": 524,
+                    "rolling": -2401,
+                    "torsion": -11394
+                },
+                "22": {
+                    "index": 23,
+                    "log_time": "2021-01-14 20:54:17",
+                    "flt": 64521,
+                    "frt": 83564,
+                    "blt": 86883,
+                    "brt": 83092,
+                    "pitching": 1171,
+                    "rolling": -1429,
+                    "torsion": -11417
+                },
+                "23": {
+                    "index": 24,
+                    "log_time": "2021-01-14 20:54:31",
+                    "flt": 64819,
+                    "frt": 88263,
+                    "blt": 82796,
+                    "brt": 83726,
+                    "pitching": 719,
+                    "rolling": -2285,
+                    "torsion": -11257
+                },
+                "24": {
+                    "index": 25,
+                    "log_time": "2021-01-15 10:11:23",
+                    "flt": 64275,
+                    "frt": 82635,
+                    "blt": 88931,
+                    "brt": 84171,
+                    "pitching": 1401,
+                    "rolling": -1275,
+                    "torsion": -11560
+                },
+                "25": {
+                    "index": 26,
+                    "log_time": "2021-01-15 10:11:36",
+                    "flt": 65249,
+                    "frt": 89114,
+                    "blt": 82527,
+                    "brt": 83523,
+                    "pitching": 625,
+                    "rolling": -2330,
+                    "torsion": -11434
+                },
+                "26": {
+                    "index": 27,
+                    "log_time": "2021-01-15 13:39:40",
+                    "flt": 64689,
+                    "frt": 84521,
+                    "blt": 87537,
+                    "brt": 84143,
+                    "pitching": 1202,
+                    "rolling": -1541,
+                    "torsion": -11613
+                },
+                "27": {
+                    "index": 28,
+                    "log_time": "2021-01-15 13:39:54",
+                    "flt": 65422,
+                    "frt": 89720,
+                    "blt": 82799,
+                    "brt": 83648,
+                    "pitching": 604,
+                    "rolling": -2357,
+                    "torsion": -11724
+                },
+                "28": {
+                    "index": 29,
+                    "log_time": "2021-01-15 14:43:21",
+                    "flt": 64900,
+                    "frt": 83398,
+                    "blt": 87875,
+                    "brt": 83951,
+                    "pitching": 1259,
+                    "rolling": -1366,
+                    "torsion": -11211
+                },
+                "29": {
+                    "index": 30,
+                    "log_time": "2021-01-15 14:43:35",
+                    "flt": 65548,
+                    "frt": 88928,
+                    "blt": 82759,
+                    "brt": 83531,
+                    "pitching": 632,
+                    "rolling": -2264,
+                    "torsion": -11304
+                },
+                "30": {
+                    "index": 31,
+                    "log_time": "2021-01-15 16:04:41",
+                    "flt": 64787,
+                    "frt": 83074,
+                    "blt": 87736,
+                    "brt": 83330,
+                    "pitching": 1241,
+                    "rolling": -1301,
+                    "torsion": -11347
+                },
+                "31": {
+                    "index": 32,
+                    "log_time": "2021-01-15 16:04:54",
+                    "flt": 65569,
+                    "frt": 89046,
+                    "blt": 82356,
+                    "brt": 83066,
+                    "pitching": 578,
+                    "rolling": -2267,
+                    "torsion": -11384
+                },
+                "32": {
+                    "index": 33,
+                    "log_time": "2021-01-15 16:36:47",
+                    "flt": 65030,
+                    "frt": 83805,
+                    "blt": 87640,
+                    "brt": 83345,
+                    "pitching": 1185,
+                    "rolling": -1357,
+                    "torsion": -11535
+                },
+                "33": {
+                    "index": 34,
+                    "log_time": "2021-01-15 16:37:00",
+                    "flt": 65308,
+                    "frt": 89437,
+                    "blt": 82530,
+                    "brt": 83907,
+                    "pitching": 625,
+                    "rolling": -2391,
+                    "torsion": -11376
+                },
+                "34": {
+                    "index": 35,
+                    "log_time": "2021-01-15 21:58:51",
+                    "flt": 64424,
+                    "frt": 82983,
+                    "blt": 88536,
+                    "brt": 84263,
+                    "pitching": 1358,
+                    "rolling": -1339,
+                    "torsion": -11416
+                },
+                "35": {
+                    "index": 36,
+                    "log_time": "2021-01-15 21:59:04",
+                    "flt": 65642,
+                    "frt": 89308,
+                    "blt": 82936,
+                    "brt": 83281,
+                    "pitching": 602,
+                    "rolling": -2251,
+                    "torsion": -11661
+                },
+                "36": {
+                    "index": 37,
+                    "log_time": "2021-01-16 08:49:42",
+                    "flt": 72060,
+                    "frt": 93918,
+                    "blt": 82683,
+                    "brt": 81320,
+                    "pitching": -105,
+                    "rolling": -1921,
+                    "torsion": -11610
+                },
+                "37": {
+                    "index": 38,
+                    "log_time": "2021-01-16 08:49:55",
+                    "flt": 68066,
+                    "frt": 91810,
+                    "blt": 84626,
+                    "brt": 85273,
+                    "pitching": 536,
+                    "rolling": -2286,
+                    "torsion": -11549
+                },
+                "38": {
+                    "index": 39,
+                    "log_time": "2021-01-16 10:41:11",
+                    "flt": 71108,
+                    "frt": 92534,
+                    "blt": 81441,
+                    "brt": 79705,
+                    "pitching": -133,
+                    "rolling": -1846,
+                    "torsion": -11581
+                },
+                "39": {
+                    "index": 40,
+                    "log_time": "2021-01-16 10:41:24",
+                    "flt": 66621,
+                    "frt": 90656,
+                    "blt": 83581,
+                    "brt": 84293,
+                    "pitching": 567,
+                    "rolling": -2320,
+                    "torsion": -11661
+                },
+                "40": {
+                    "index": 41,
+                    "log_time": "2021-01-16 15:49:17",
+                    "flt": 72187,
+                    "frt": 92844,
+                    "blt": 82007,
+                    "brt": 80115,
+                    "pitching": -155,
+                    "rolling": -1759,
+                    "torsion": -11274
+                },
+                "41": {
+                    "index": 42,
+                    "log_time": "2021-01-16 15:49:30",
+                    "flt": 66981,
+                    "frt": 90944,
+                    "blt": 84366,
+                    "brt": 85173,
+                    "pitching": 621,
+                    "rolling": -2322,
+                    "torsion": -11578
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,61 @@
+[
+    {
+        "title": "1. Select Source",
+        "items": [
+            {
+                "target": "source",
+                "title": "From",
+                "type": "select",
+                "mode": "singular",
+                "options": []
+            }
+        ]
+    },
+    {
+        "title": "2. Select Data Source",
+        "items": [
+            {
+                "target": "db_id",
+                "title": "From",
+                "type": "text",
+                "content": ""
+            },
+            {
+                "target": "table_name",
+                "title": "",
+                "type": "text",
+                "content": ""
+            }
+        ]
+    },
+    {
+        "title": "3. Select Equipment",
+        "items": [
+            {
+              "target": "user_fab",
+              "title": "User/Fab",
+              "type": "text",
+              "content": ""
+            },
+            {
+              "target": "equipment_name",
+              "title": "Equipment",
+              "type": "text",
+              "content": ""
+            }
+        ]
+    },
+    {
+        "title": "4. Select Start/End Date",
+        "items": [
+            {
+                "target": "period",
+                "title": "Period",
+                "type": "DatePicker",
+                "period": null,
+                "selected": null,
+                "enable": false
+            }
+        ]
+    }
+]

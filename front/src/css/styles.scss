@@ -1,0 +1,53 @@
+@import "normalize/normalize.css";
+@import './saira_100_400_700.css';
+//@import "header/header.scss";
+//@import "content/content.scss";
+//@import "footer/footer.scss";
+
+* {
+  box-sizing: border-box !important;
+  font-family: Saira, sans-serif;
+  & .ant-select-item-option-content {
+    font-size: 12px;
+    & > span {
+      display: inline-block;
+      width: 100%;
+    }
+  }
+  & .ant-notification-notice {
+    min-width: 384px;
+    width: fit-content;
+  }
+  & .ant-modal-title {
+    font-size: 20px;
+    font-weight: bold;
+  }
+}
+
+body {
+  background-color: #ffffff;
+}
+
+.modal-enter {
+  opacity: 0;
+}
+.modal-enter-active {
+  opacity: 1;
+  transition: all .2s;
+}
+.modal-exit {
+  opacity: 1;
+}
+.modal-exit-active {
+  opacity: 0;
+  transition: all .2s;
+}
+.sub-menu-style {
+  &:hover {
+    background-color: rgba(24, 144, 255, 0.8) !important;
+  }
+}
+
+.ant-menu-dark > .ant-menu-sub {
+  background-color: #061178 !important;
+}

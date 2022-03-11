@@ -1,0 +1,105 @@
+{
+    "data": {
+        "disp_order": [
+            "status",
+            "flt",
+            "frt",
+            "blt",
+            "brt",
+            "pitching",
+            "rolling",
+            "torsion",
+            "deflection",
+            "log_time"
+        ],
+        "row": {
+            "1": {
+                "status": 0,
+                "flt": 64556,
+                "frt": 70803,
+                "blt": 69460,
+                "brt": 65765,
+                "pitching": -7,
+                "rolling": -239,
+                "torsion": -4,
+                "deflection": "a",
+                "log_time": "2021-10-01 12:45:28"
+            },
+            "2": {
+                "status": 0,
+                "flt": 62446,
+                "frt": 70005,
+                "blt": 71119,
+                "brt": 68889,
+                "pitching": 411,
+                "rolling": -499,
+                "torsion": -4,
+                "deflection": "b",
+                "log_time": "2021-10-01 18:39:33"
+            },
+            "3": {
+                "status": 0,
+                "flt": 64882,
+                "frt": 71203,
+                "blt": 69706,
+                "brt": 65858,
+                "pitching": -28,
+                "rolling": -231,
+                "torsion": -5,
+                "deflection": "*",
+                "log_time": "2021-10-01 18:39:46"
+            }
+        }
+    },
+    "analysis": {
+        "type": "setting",
+        "items": [
+            {
+                "disp_order": "1",
+                "source_col": "flt",
+                "title": "FLT Delta Max",
+                "group_analysis": "delta.abs.max",
+                "group_analysis_type": "sequential",
+                "total_analysis": "max",
+                "total_analysis_type": "max"
+            },
+            {
+                "disp_order": "2",
+                "source_col": "blt",
+                "title": "BLT Sum",
+                "group_analysis": "from resource.script.analysis_base import AnalysisBase\n\n\nclass ColumnAnalysisScript(AnalysisBase):\n    \"\"\"\n    .. class:: ColumnAnalysisScript\n\n        This class is for analyze specific column data by user script.\n    \"\"\"\n    def __init__(self, **kwargs):\n        super().__init__(**kwargs)\n\n    def run(self, data) -> float:\n        \"\"\"\n        This method will call by Main Process. Fix this method as you want.\n\n        :param data: pandas.Series Data\n        :return: analyze result. (float)\n        \"\"\"\n\n        return data.mean()\n",
+                "group_analysis_type": "script",
+                "total_analysis": "max",
+                "total_analysis_type": "max"
+            },
+            {
+                "disp_order": "3",
+                "source_col": "blt",
+                "title": "BLT2",
+                "group_analysis": "sum",
+                "group_analysis_type": "sum",
+                "total_analysis": "max",
+                "total_analysis_type": "max"
+            },
+            {
+                "disp_order": "4",
+                "source_col": "blt",
+                "title": "BLT3",
+                "group_analysis": "sum",
+                "group_analysis_type": "sum",
+                "total_analysis": "max",
+                "total_analysis_type": "max"
+            }
+        ],
+        "filter_default": [
+            {
+                "key": "deflection",
+                "val": ["*", "a"]
+            }
+        ],
+        "aggregation_default": {
+            "type": "period",
+            "val": "4h"
+        }
+    }
+}

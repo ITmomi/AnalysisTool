@@ -1,0 +1,34 @@
+{
+    "items": [
+        {
+            "target": "host",
+            "type": "text",
+            "title": "Host",
+            "content": ""
+        },
+        {
+            "target": "port",
+            "type": "text",
+            "title": "Port",
+            "content": ""
+        },
+        {
+            "target": "username",
+            "type": "text",
+            "title": "UserName",
+            "content": ""
+        },
+        {
+            "target": "dbname",
+            "type": "text",
+            "title": "DBName",
+            "content": ""
+        },
+        {
+            "target": "password",
+            "type": "password",
+            "title": "Password",
+            "content": ""
+        }
+    ]
+}

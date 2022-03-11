@@ -1,0 +1,38 @@
+[
+    {
+        "title": "1. Set Display Tab Name",
+        "items": [
+            {
+                "target": "tab_name",
+                "title": "Tab Name",
+                "type": "input",
+                "content": ""
+            }
+        ]
+    },
+    {
+        "title": "2. Select Data Source",
+        "items": [
+            {
+                "target": "db_id",
+                "title": "From",
+                "type": "select",
+                "mode": "singular",
+                "options": [],
+                "selected": null
+            }
+        ]
+    },
+    {
+        "title": "3. Input SQL",
+        "items": [
+            {
+                "target": "sql",
+                "title": "",
+                "type": "textarea",
+                "content": "",
+                "enable": false
+            }
+        ]
+    }
+]

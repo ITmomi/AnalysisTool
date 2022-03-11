@@ -1,0 +1,49 @@
+[
+    {
+        "title": "1. Select Source",
+        "items": [
+            {
+                "target": "source",
+                "title": "From",
+                "type": "select",
+                "mode": "singular",
+                "options": null
+            }
+        ]
+    },
+    {
+        "target": "select_equipment",
+        "title": "2. Equipment",
+        "items": [
+           {
+                "target": "equipment_name",
+                "title": "Equipment",
+                "type": "text",
+                "content": ""
+           }
+        ]
+    },
+    {
+        "title": "3. Log Type",
+        "items": [
+            {
+                "target": "log_name",
+                "title": "Log Name",
+                "type": "text",
+                "content": ""
+            }
+        ]
+    },
+    {
+        "title": "4. Start/End Date",
+        "items": [
+            {
+                "target": "period",
+                "title": "Period",
+                "type": "datePicker",
+                "options": null,
+                "enable": false
+            }
+        ]
+    }
+]

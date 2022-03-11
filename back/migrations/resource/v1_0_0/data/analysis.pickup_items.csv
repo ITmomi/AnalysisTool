@@ -1,0 +1,132 @@
+LiPSFocus,bl,delta.abs.max,-99999999999999,1,Z Sensor Meas. BL Delta Max,TRUE
+LiPSFocus,bc,delta.abs.max,-99999999999999,2,Z Sensor Meas. BC Delta Max,TRUE
+LiPSFocus,br,delta.abs.max,-99999999999999,3,Z Sensor Meas. BR Delta Max,TRUE
+LiPSFocus,fl,delta.abs.max,-99999999999999,4,Z Sensor Meas. FL Delta Max,TRUE
+LiPSFocus,fc,delta.abs.max,-99999999999999,5,Z Sensor Meas. FC Delta Max,TRUE
+LiPSFocus,fr,delta.abs.max,-99999999999999,6,Z Sensor Meas. FR Delta Max,TRUE
+LiPSFocus,left_vt,ave,-99999999999999,7,L V/T AVE,TRUE
+LiPSFocus,left_vt,delta.abs.max,-99999999999999,8,L V/T Delta Max,TRUE
+LiPSFocus,left_hs,ave,-99999999999999,9,L H/S AVE,TRUE
+LiPSFocus,left_hs,delta.abs.max,-99999999999999,10,L H/S Delta Max,TRUE
+LiPSFocus,center_vt,ave,-99999999999999,11,C V/T AVE,TRUE
+LiPSFocus,center_vt,delta.abs.max,-99999999999999,12,C V/T Delta Max,TRUE
+LiPSFocus,center_hs,ave,-99999999999999,13,C H/S AVE,TRUE
+LiPSFocus,center_hs,delta.abs.max,-99999999999999,14,C H/S Delta Max,TRUE
+LiPSFocus,right_vt,ave,-99999999999999,15,R V/T AVE,TRUE
+LiPSFocus,right_vt,delta.abs.max,-99999999999999,16,R V/T Delta Max,TRUE
+LiPSFocus,right_hs,ave,-99999999999999,17,R H/S AVE,TRUE
+LiPSFocus,right_hs,delta.abs.max,-99999999999999,18,R H/S Delta Max,TRUE
+LiPSFocus,z,ave,-99999999999999,19,Z AVE,TRUE
+LiPSFocus,z,delta.abs.max,-99999999999999,20,Z Delta Max,TRUE
+LiPSFocus,pitch,ave,-99999999999999,21,Pitch AVE,TRUE
+LiPSFocus,pitch,delta.abs.max,-99999999999999,22,Pitch Delta Max,TRUE
+LiPSFocus,roll,ave,-99999999999999,23,Roll AVE,TRUE
+LiPSFocus,roll,delta.abs.max,-99999999999999,24,Roll Delta Max,TRUE
+MountPressLog,lb_kpa,ave,-99999999999999,1,LB AVE,TRUE
+MountPressLog,lb_kpa,delta.abs.max,-99999999999999,2,LB Delta Max,TRUE
+MountPressLog,lf_kpa,ave,-99999999999999,3,LF AVE,TRUE
+MountPressLog,lf_kpa,delta.abs.max,-99999999999999,4,LF Delta Max,TRUE
+MountPressLog,rb_kpa,ave,-99999999999999,5,RB AVE,TRUE
+MountPressLog,rb_kpa,delta.abs.max,-99999999999999,6,RB Delta Max,TRUE
+MountPressLog,rf_kpa,ave,-99999999999999,7,RF AVE,TRUE
+MountPressLog,rf_kpa,delta.abs.max,-99999999999999,8,RF Delta Max,TRUE
+MountPressLog,z_cnt_rb,ave,-99999999999999,9,Z Cnt RB AVE,TRUE
+MountPressLog,z_cnt_rb,delta.abs.max,-99999999999999,10,Z Cnt RB Delta Max,TRUE
+MountPressLog,z_cnt_lb,ave,-99999999999999,11,Z Cnt LB AVE,TRUE
+MountPressLog,z_cnt_lb,delta.abs.max,-99999999999999,12,Z Cnt LB Delta Max,TRUE
+MountPressLog,z_cnt_lf,ave,-99999999999999,13,Z Cnt LF AVE,TRUE
+MountPressLog,z_cnt_lf,delta.abs.max,-99999999999999,14,Z Cnt LF Delta Max,TRUE
+MountPressLog,z_cnt_rf,ave,-99999999999999,15,Z Cnt RF AVE,TRUE
+MountPressLog,z_cnt_rf,delta.abs.max,-99999999999999,16,Z Cnt RF Delta Max,TRUE
+MountPressLog,z_out_rb_bit,ave,-99999999999999,17,Z Out RB AVE,TRUE
+MountPressLog,z_out_rb_bit,delta.abs.max,-99999999999999,18,Z Out RB Delta Max,TRUE
+MountPressLog,z_out_lb_bit,ave,-99999999999999,19,Z Out LB AVE,TRUE
+MountPressLog,z_out_lb_bit,delta.abs.max,-99999999999999,20,Z Out LB Delta Max,TRUE
+MountPressLog,z_out_lf_bit,ave,-99999999999999,21,Z Out LF AVE,TRUE
+MountPressLog,z_out_lf_bit,delta.abs.max,-99999999999999,22,Z Out LF Delta Max,TRUE
+MountPressLog,z_out_rf_bit,ave,-99999999999999,23,Z Out RF AVE,TRUE
+MountPressLog,z_out_rf_bit,delta.abs.max,-99999999999999,24,Z Out RF Delta Max,TRUE
+MountPressLog,z_cur_rb_bit,ave,-99999999999999,25,Z Cur RB AVE,TRUE
+MountPressLog,z_cur_rb_bit,delta.abs.max,-99999999999999,26,Z Cur RB Delta Max,TRUE
+MountPressLog,z_cur_lb_bit,ave,-99999999999999,27,Z Cur LB AVE,TRUE
+MountPressLog,z_cur_lb_bit,delta.abs.max,-99999999999999,28,Z Cur LB Delta Max,TRUE
+MountPressLog,z_cur_lf_bit,ave,-99999999999999,29,Z Cur LF AVE,TRUE
+MountPressLog,z_cur_lf_bit,delta.abs.max,-99999999999999,30,Z Cur LF Delta Max,TRUE
+MountPressLog,z_cur_rf_bit,ave,-99999999999999,31,Z Cur RF AVE,TRUE
+MountPressLog,z_cur_rf_bit,delta.abs.max,-99999999999999,32,Z Cur RF Delta Max,TRUE
+PLATEAUTOFOCUSCOMPENSATION,lot_id,-99999999999999,-99999999999999,1,LotID,FALSE
+PLATEAUTOFOCUSCOMPENSATION,glass_id,nunique,-99999999999999,2,Plate Num,FALSE
+PLATEAUTOFOCUSCOMPENSATION,lips_height,ave,delta.abs.max,3,LIPS Height AVE,TRUE
+PLATEAUTOFOCUSCOMPENSATION,lips_height,range.max,max,4,LIPS Height Range,TRUE
+PLATEAUTOFOCUSCOMPENSATION,mask_bend_height,ave,delta.abs.max,5,MASK BEND Height AVE,TRUE
+PLATEAUTOFOCUSCOMPENSATION,mask_bend_height,range.max,max,6,MASK BEND Height Range,TRUE
+PLATEAUTOFOCUSCOMPENSATION,mask_bend_pitch,ave,delta.abs.max,7,MASK BEND Pitching AVE,TRUE
+PLATEAUTOFOCUSCOMPENSATION,mask_bend_pitch,range.max,max,8,MASK BEND Picthing Range,TRUE
+PLATEAUTOFOCUSCOMPENSATION,mask_bend_roll,ave,delta.abs.max,9,MASK BEND Rolling AVE,TRUE
+PLATEAUTOFOCUSCOMPENSATION,mask_bend_roll,range.max,max,10,MASK BEND Rolling Range,TRUE
+PLATEAUTOFOCUSCOMPENSATION,chuck_pos_afc_meas_height,ave,delta.abs.max,11,Chuck Posture Height AVE,TRUE
+PLATEAUTOFOCUSCOMPENSATION,chuck_pos_afc_meas_height,3sigma,max,12,Chuck Posture Height 3sigma,TRUE
+PLATEAUTOFOCUSCOMPENSATION,chuck_pos_afc_meas_pitch,ave,delta.abs.max,13,Chuck Posture Pitching AVE,TRUE
+PLATEAUTOFOCUSCOMPENSATION,chuck_pos_afc_meas_pitch,3sigma,ave,14,Chuck Posture Pitching 3sigma,TRUE
+PLATEAUTOFOCUSCOMPENSATION,chuck_pos_afc_meas_roll,ave,delta.abs.max,15,Chuck Posture Rolling AVE,TRUE
+PLATEAUTOFOCUSCOMPENSATION,chuck_pos_afc_meas_roll,3sigma,max,16,Chuck Posture Rolling 3sigma,TRUE
+PLATEAUTOFOCUSCOMPENSATION,stage_pos_afc_meas_height,ave,delta.abs.max,17,Stage Pos. Height AVE,TRUE
+PLATEAUTOFOCUSCOMPENSATION,stage_pos_afc_meas_height,3sigma.abs,ave,18,Stage Pos. Height 3sigma,TRUE
+PLATEAUTOFOCUSCOMPENSATION,stage_pos_afc_meas_pitch,ave,delta.abs.max,19,Stage Pos. Pitching AVE,TRUE
+PLATEAUTOFOCUSCOMPENSATION,stage_pos_afc_meas_roll,ave,delta.abs.max,20,Stage Pos. Rolling AVE,TRUE
+PLATEAUTOFOCUSCOMPENSATION,stage_pos_afc_meas_z1,ave,delta.abs.max,21,Stage Pos. Z1 AVE,TRUE
+PLATEAUTOFOCUSCOMPENSATION,stage_pos_afc_meas_z2,ave,delta.abs.max,22,Stage Pos. Z2 AVE,TRUE
+PLATEAUTOFOCUSCOMPENSATION,stage_pos_afc_meas_z3,ave,delta.abs.max,23,Stage Pos. Z3 AVE,TRUE
+PLATEAUTOFOCUSCOMPENSATION,stage_pos_afc_meas_z4,ave,delta.abs.max,24,Stage Pos. Z4 AVE,TRUE
+PRESCANCOMPENSATIONMONITOR,lot_id,-99999999999999,-99999999999999,1,LotID,FALSE
+PRESCANCOMPENSATIONMONITOR,glass_id,nunique,-99999999999999,2,Plate Num,FALSE
+PRESCANCOMPENSATIONMONITOR,expo_start_pos_psy,ave,abs.max,3,Expo. Start PSY AVE,TRUE
+PRESCANCOMPENSATIONMONITOR,expo_start_pos_psz,ave,abs.max,4,Expo. Start PSZ AVE,TRUE
+PRESCANCOMPENSATIONMONITOR,expo_start_pos_psr,ave,abs.max,5,Expo. Start PS Roll AVE,TRUE
+PRESCANCOMPENSATIONMONITOR,expo_start_pos_psp,ave,abs.max,6,Expo. Start PS Pitch AVE,TRUE
+PRESCANCOMPENSATIONMONITOR,expo_start_pos_psz,3sigma,max,7,Expo. Start PSZ 3sigma,TRUE
+PRESCANCOMPENSATIONMONITOR,expo_start_pos_psr,3sigma,max,8,Expo. Start PS Roll 3sigma,TRUE
+PRESCANCOMPENSATIONMONITOR,expo_start_pos_psp,3sigma,max,9,Expo. Start PS Pitch 3sigma,TRUE
+PRESCANCOMPENSATIONMONITOR,expo_end_pos_psy,ave,abs.max,10,Expo. End PSY AVE,TRUE
+PRESCANCOMPENSATIONMONITOR,expo_end_pos_psz,ave,abs.max,11,Expo. End PSZ AVE,TRUE
+PRESCANCOMPENSATIONMONITOR,expo_end_pos_psr,ave,abs.max,12,Expo. End PS Roll AVE,TRUE
+PRESCANCOMPENSATIONMONITOR,expo_end_pos_psp,ave,abs.max,13,Expo. End PS Pitch AVE,TRUE
+PRESCANCOMPENSATIONMONITOR,expo_end_pos_psz,3sigma,max,14,Expo. End PSZ 3sigma,TRUE
+PRESCANCOMPENSATIONMONITOR,expo_end_pos_psr,3sigma,max,15,Expo. End PS Roll 3sigma,TRUE
+PRESCANCOMPENSATIONMONITOR,expo_end_pos_psp,3sigma,max,16,Expo. End PS Pitch 3sigma,TRUE
+PRESCANCOMPENSATIONMONITOR,psz_comp_start_pos1_psy,ave,abs.max,17,PSZ Pos1 PSY AVE,TRUE
+PRESCANCOMPENSATIONMONITOR,psz_comp_start_pos1_psz,ave,abs.max,18,PSZ Pos1 PSZ AVE,TRUE
+PRESCANCOMPENSATIONMONITOR,psr_comp_start_pos1_psr,ave,abs.max,19,PSZ Pos1 PS Roll AVE,TRUE
+PRESCANCOMPENSATIONMONITOR,psp_comp_start_pos1_psp,ave,abs.max,20,PSZ Pos1 PS Pitch AVE,TRUE
+PRESCANCOMPENSATIONMONITOR,psz_comp_start_pos1_psz,3sigma,max,21,PSZ Pos1 PSZ 3sigma,TRUE
+PRESCANCOMPENSATIONMONITOR,psr_comp_start_pos1_psr,3sigma,max,22,PSZ Pos1 PS Roll 3sigma,TRUE
+PRESCANCOMPENSATIONMONITOR,psp_comp_start_pos1_psp,3sigma,max,23,PSZ Pos1 PS Pitch 3sigma,TRUE
+PRESCANCOMPENSATIONMONITOR,psz_comp_start_pos2_psy,ave,abs.max,24,PSZ Pos2 PSY AVE,TRUE
+PRESCANCOMPENSATIONMONITOR,psz_comp_start_pos2_psz,ave,abs.max,25,PSZ Pos2 PSZ AVE,TRUE
+PRESCANCOMPENSATIONMONITOR,psr_comp_start_pos2_psr,ave,abs.max,26,PSZ Pos2 PS Roll AVE,TRUE
+PRESCANCOMPENSATIONMONITOR,psp_comp_start_pos2_psp,ave,abs.max,27,PSZ Pos2 PS Pitch AVE,TRUE
+PRESCANCOMPENSATIONMONITOR,psz_comp_start_pos2_psz,3sigma,max,28,PSZ Pos2 PSZ 3sigma,TRUE
+PRESCANCOMPENSATIONMONITOR,psr_comp_start_pos2_psr,3sigma,max,29,PSZ Pos2 PS Roll 3sigma,TRUE
+PRESCANCOMPENSATIONMONITOR,psp_comp_start_pos2_psp,3sigma,max,30,PSZ Pos2 PS Pitch 3sigma,TRUE
+PRESCANCOMPENSATIONMONITOR,psz_maxdiff_psy,ave,abs.max,31,PSZ Max Diff. PSY AVE,TRUE
+PRESCANCOMPENSATIONMONITOR,psz_maxdiff_psy,3sigma,max,32,PSZ Max Diff. PSY 3sigma,TRUE
+PRESCANCOMPENSATIONMONITOR,psz_maxdiff_psz,ave,abs.max,33,PSZ Max Diff. PSZ AVE,TRUE
+PRESCANCOMPENSATIONMONITOR,psz_maxdiff_psz,3sigma,max,34,PSZ Max Diff. PSZ 3sigma,TRUE
+PRESCANCOMPENSATIONMONITOR,psr_maxdiff_psy,ave,abs.max,35,PS Roll Max Diff. PSY AVE,TRUE
+PRESCANCOMPENSATIONMONITOR,psr_maxdiff_psy,3sigma,max,36,PS Roll Max Diff. PSY 3sigma,TRUE
+PRESCANCOMPENSATIONMONITOR,psr_maxdiff_psr,ave,abs.max,37,PS Roll Max Diff. PS Roll AVE,TRUE
+PRESCANCOMPENSATIONMONITOR,psr_maxdiff_psr,3sigma,max,38,PS Roll Max Diff. PS Roll 3sigma,TRUE
+PRESCANCOMPENSATIONMONITOR,psp_maxdiff_psy,ave,abs.max,39,PS Pitch Max Diff. PSY AVE,TRUE
+PRESCANCOMPENSATIONMONITOR,psp_maxdiff_psy,3sigma,max,40,PS Pitch Max Diff. PSY 3sigma,TRUE
+PRESCANCOMPENSATIONMONITOR,psp_maxdiff_psp,ave,abs.max,41,PS Pitch Max Diff. PS Pitch AVE,TRUE
+PRESCANCOMPENSATIONMONITOR,psp_maxdiff_psp,3sigma,max,42,PS Pitch Max Diff. PS Pitch 3sigma,TRUE
+TiltMeasurementLog,flt,delta.abs.max,-99999999999999,1,FLT Delta Max,TRUE
+TiltMeasurementLog,frt,delta.abs.max,-99999999999999,2,FRT Delta Max,TRUE
+TiltMeasurementLog,blt,delta.abs.max,-99999999999999,3,BLT Delta Max,TRUE
+TiltMeasurementLog,brt,delta.abs.max,-99999999999999,4,BRT Delta Max,TRUE
+TiltMeasurementLog,pitching,ave,-99999999999999,5,Pitching AVE,TRUE
+TiltMeasurementLog,pitching,delta.abs.max,-99999999999999,6,Pitching Delta Max,TRUE
+TiltMeasurementLog,rolling,ave,-99999999999999,7,Rolling AVE,TRUE
+TiltMeasurementLog,rolling,delta.abs.max,-99999999999999,8,Rolling Delta Max,TRUE
+TiltMeasurementLog,torsion,ave,-99999999999999,9,Torsion AVE,TRUE
+TiltMeasurementLog,torsion,delta.abs.max,-99999999999999,10,Torsion Delta Max,TRUE

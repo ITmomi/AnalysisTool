@@ -1,0 +1,82 @@
+[
+    {
+        "title": "1. Select Source",
+        "items": [
+            {
+                "target": "source",
+                "title": "From",
+                "type": "text",
+                "content": "remote"
+            }
+        ]
+    },
+    {
+        "title": "2. Select Data Source",
+        "items": [
+            {
+                "target": "db_id",
+                "title": "From",
+                "type": "select",
+                "mode": "singular",
+                "options": [],
+                "selected": null
+            },
+            {
+                "target": "table_name",
+                "title": "",
+                "type": "text",
+                "content": ""
+            }
+        ]
+    },
+    {
+        "title": "3. Select Equipment",
+        "items": [
+            {
+                "target": "user_fab",
+                "title": "User/Fab",
+                "type": "select",
+                "mode": "subItem",
+                "options": [],
+                "selected": null,
+                "subItem": {
+                    "target": "equipment_name",
+                    "title": "Equipment",
+                    "type": "select",
+                    "mode": "singular",
+                    "options": [],
+                    "selected": null
+                }
+            }
+        ]
+    },
+    {
+        "title": "4. Select Start/End Date",
+        "items": [
+            {
+                "target": "period",
+                "title": "Period",
+                "type": "DatePicker",
+                "period": null,
+                "selected": null
+            }
+        ]
+    },
+    {
+        "title": "5. Select Preprocessing Script",
+        "items": [
+            {
+                "target": "file_name",
+                "title": "Script File",
+                "type": "file",
+                "file_name": null
+            },
+            {
+                "target": "use_script",
+                "title": "use script",
+                "type": "switch",
+                "value": false
+            }
+        ]
+    }
+]

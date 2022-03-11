@@ -1,0 +1,13 @@
+itsdangerous==2.0.1
+Flask==1.1.2
+flask-restx==0.3.0
+numpy==1.20.2
+pandas==1.2.3
+psycopg2==2.8.6
+requests==2.25.1
+simplejson==3.17.2
+psutil==5.8.0
+sqlalchemy==1.4.22
+openpyxl==3.0.7
+alembic==1.7.5
+numba==0.55.1

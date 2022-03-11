@@ -1,0 +1,1 @@
+create type public.request_status as enum ('idle', 'running', 'error', 'success', 'cancel');

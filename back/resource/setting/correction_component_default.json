@@ -1,0 +1,61 @@
+{
+    "stage_correction": {
+        "DR": {
+            "bdc x": true,
+            "sdc dr": true,
+            "adc dr": true,
+            "yaw dr": true,
+            "auto dr": true,
+            "bar rotation": true,
+            "mag tilt comp x": true,
+            "mag tilt diff x": true
+        },
+        "MY": {
+            "bdc y": true,
+            "sdc my": true,
+            "adc my": true,
+            "yaw my": true,
+            "mag x shift y": true,
+            "mag y shift y": true,
+            "mag tilt comp y": true,
+            "mag tilt diff y": true
+        },
+        "YAW": {
+            "sdc yaw": true,
+            "adc yaw": true,
+            "bdc t": true
+        }
+    },
+    "adc_correction": {
+        "ADC Measurement": {
+            "dr": true,
+            "my": true,
+            "yaw": true,
+            "mx": true,
+            "arc": true,
+            "mag tilt dx": true,
+            "mag tilt dy": true,
+            "selected": true
+        },
+        "ADC Offset": {
+            "dr": true,
+            "my": true,
+            "yaw": true,
+            "mx": true,
+            "arc": true,
+            "mag tilt dx": true,
+            "mag tilt dy": true,
+            "selected": false
+        },
+        "ADC Measurement + Offset": {
+            "dr": true,
+            "my": true,
+            "yaw": true,
+            "mx": true,
+            "arc": true,
+            "mag tilt dx": true,
+            "mag tilt dy": true,
+            "selected": false
+        }
+    }
+}

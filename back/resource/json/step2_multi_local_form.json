@@ -1,0 +1,36 @@
+[
+    {
+        "title": "1. Set Display Tab Name",
+        "items": [
+            {
+                "target": "tab_name",
+                "title": "Tab Name",
+                "type": "input",
+                "content": ""
+            }
+        ]
+    },
+    {
+        "title": "2. Select Source Files",
+        "items": [
+            {
+                "target": "src_file",
+                "title": "Log Files",
+                "type": "files",
+                "enable": true,
+                "file_name": []
+            }
+        ]
+    },
+    {
+        "title": "3. Log Type",
+        "items": [
+            {
+                "target": "log_name",
+                "title": "Log Name",
+                "type": "text",
+                "content": ""
+            }
+        ]
+    }
+]

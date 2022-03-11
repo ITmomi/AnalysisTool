@@ -1,0 +1,47 @@
+[
+    {
+        "title": "1. Function Name",
+        "items": [
+            {
+                "target": "func_name",
+                "title": "From",
+                "type": "text",
+                "content": ""
+            }
+        ]
+    },
+    {
+        "title": "2. Source Type",
+        "items": [
+            {
+                "target": "source_type",
+                "title": "From",
+                "type": "text",
+                "content": "local"
+            }
+        ]
+    },
+    {
+        "title": "3. Select Source Files",
+        "items": [
+            {
+                "target": "src_file",
+                "title": "Log Files",
+                "type": "files",
+                "file_name": [],
+                "enable": true
+            }
+        ]
+    },
+    {
+        "title": "4. Log Type",
+        "items": [
+            {
+                "target": "log_name",
+                "title": "Log Name",
+                "type": "text",
+                "content": ""
+            }
+        ]
+    }
+]

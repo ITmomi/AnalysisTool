@@ -1,0 +1,85 @@
+{
+    "title": "Management Setting",
+    "settings": [
+        {
+            "target": "local",
+            "url": "/api/setting/local-database-info",
+            "title": "LOCAL DATABASE INFO",
+            "items": [
+                {
+                    "target": "host",
+                    "type": "text",
+                    "title": "Host",
+                    "content": ""
+                },
+                {
+                    "target": "port",
+                    "type": "text",
+                    "title": "Port",
+                    "content": ""
+                },
+                {
+                    "target": "username",
+                    "type": "text",
+                    "title": "UserName",
+                    "content": ""
+                },
+                {
+                    "target": "dbname",
+                    "type": "text",
+                    "title": "DBName",
+                    "content": ""
+                },
+                {
+                    "target": "password",
+                    "type": "password",
+                    "title": "Password",
+                    "content": ""
+                },
+                {
+                    "target": "test_connection",
+                    "type": "button",
+                    "title": "Test Connection",
+                    "url": "/api/setting/connection-check"
+                }
+            ]
+        },
+        {
+            "target": "remote",
+            "url": "/api/setting/remote-server-info",
+            "title": "REMOTE SERVER INFO",
+            "items": [
+                {
+                    "target": "host",
+                    "type": "text",
+                    "title": "Host",
+                    "content": ""
+                },
+                {
+                    "target": "test_connection",
+                    "type": "button",
+                    "title": "Test Connection",
+                    "url": "/api/setting/connection-check"
+                }
+            ]
+        },
+        {
+            "target": "table",
+            "title": "SETTINGS TABLE LIST",
+            "items": [
+                {
+                    "target": "import",
+                    "type": "button",
+                    "title": "Import",
+                    "url": "/api/import"
+                },
+                {
+                    "target": "export",
+                    "type": "button",
+                    "title": "Export",
+                    "url": "/api/export/table"
+                }
+            ]
+        }
+    ]
+}

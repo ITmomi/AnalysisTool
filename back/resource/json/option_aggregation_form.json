@@ -1,0 +1,22 @@
+{
+    "target": "aggregation_by",
+    "title": "Aggregation By",
+    "type": "select",
+    "mode": "subItem",
+    "options": [],
+    "selected": null,
+    "subItem": {
+        "period": {
+            "target": "aggregation_val",
+            "type": "edit",
+            "selected": null
+        },
+        "column": {
+            "target": "aggregation_val",
+            "type": "select",
+            "mode": "singular",
+            "options": [],
+            "selected": null
+        }
+    }
+}

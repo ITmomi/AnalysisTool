@@ -1,0 +1,2 @@
+class RapidConnectionError(Exception):
+    pass

@@ -1,0 +1,14 @@
+{
+    "data": {
+    },
+    "convert": {
+        "log_define": {
+            "log_name": "TiltMeasurementLog",
+            "table_name": "tilt_measurement_log",
+            "rule_name": "TEST"
+        },
+        "info": [],
+        "header": [],
+        "custom": []
+    }
+}

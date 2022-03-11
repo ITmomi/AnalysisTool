@@ -1,0 +1,62 @@
+{
+    "data": {
+        "disp_order": [
+            "status",
+            "flt",
+            "frt",
+            "blt",
+            "brt",
+            "pitching",
+            "rolling",
+            "torsion",
+            "deflection",
+            "log_time"
+        ],
+        "row": {
+            "1": {
+                "status": 0,
+                "flt": 64556,
+                "frt": 70803,
+                "blt": 69460,
+                "brt": 65765,
+                "pitching": -7,
+                "rolling": -239,
+                "torsion": -4,
+                "deflection": "a",
+                "log_time": "2021-10-01 12:45:28"
+            },
+            "2": {
+                "status": 0,
+                "flt": 62446,
+                "frt": 70005,
+                "blt": 71119,
+                "brt": 68889,
+                "pitching": 411,
+                "rolling": -499,
+                "torsion": -4,
+                "deflection": "b",
+                "log_time": "2021-10-01 18:39:33"
+            },
+            "3": {
+                "status": 0,
+                "flt": 64882,
+                "frt": 71203,
+                "blt": 69706,
+                "brt": 65858,
+                "pitching": -28,
+                "rolling": -231,
+                "torsion": -5,
+                "deflection": "*",
+                "log_time": "2021-10-01 18:39:46"
+            }
+        }
+    },
+    "analysis": {
+        "type": "script",
+        "script": {
+            "db_id": 3,
+            "sql": "select * from adc_measurement"
+        }
+
+    }
+}

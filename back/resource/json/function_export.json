@@ -1,0 +1,86 @@
+[
+    {
+        "aggregation_default": {
+            "type": "period",
+            "val": "4h"
+        },
+        "analysis_items": [
+            {
+                "disp_order": 1,
+                "group_analysis": "delta.abs.max",
+                "group_analysis_type": "sequential",
+                "source_col": "flt",
+                "title": "FLT Delta Max",
+                "total_analysis": "max",
+                "total_analysis_type": "max"
+            },
+            {
+                "disp_order": 2,
+                "group_analysis": "data.sum()*100",
+                "group_analysis_type": "custom",
+                "source_col": "blt",
+                "title": "BLT Sum",
+                "total_analysis": "max",
+                "total_analysis_type": "max"
+            },
+            {
+                "disp_order": 3,
+                "group_analysis": "max",
+                "group_analysis_type": "max",
+                "source_col": "frt",
+                "title": "FRT MAX",
+                "total_analysis": "max",
+                "total_analysis_type": "max"
+            },
+            {
+                "disp_order": 5,
+                "group_analysis": "data.count()",
+                "group_analysis_type": "custom",
+                "source_col": "rolling",
+                "title": "COUNT",
+                "total_analysis": "max",
+                "total_analysis_type": "max"
+            },
+            {
+                "disp_order": 4,
+                "group_analysis": "data.mean()",
+                "group_analysis_type": "custom",
+                "source_col": "pitching",
+                "title": "AVERAGE",
+                "total_analysis": "max",
+                "total_analysis_type": "max"
+            }
+        ],
+        "category": {
+            "title": "FOCUS"
+        },
+        "filter_default": [
+            {
+                "key": "deflection",
+                "val": "*"
+            }
+        ],
+        "function": {
+            "btn_msg": "Analysis",
+            "log_name": "TiltMeasurementLog",
+            "show_org": false,
+            "sub_title": "Tilt Measurement Log",
+            "title": "Tilt Meas."
+        },
+        "visualization_default": [
+            {
+                "title": "FLT Delta Max",
+                "type": "bar",
+                "x_axis": "log_time",
+                "x_range_max": "100",
+                "x_range_min": "0",
+                "y_axis": "FLT Delta Max",
+                "y_range_max": "100",
+                "y_range_min": "0",
+                "z_axis": "None",
+                "z_range_max": "100",
+                "z_range_min": "0"
+            }
+        ]
+    }
+]

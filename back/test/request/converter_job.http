@@ -1,0 +1,43 @@
+POST http://localhost:5000/api/converter/job
+Content-Type: application/json
+
+{
+  "log_name": "PLATEAUTOFOCUSCOMPENSATION",
+  "source":"local",
+  "file": [19],
+  "equipment_type": "G803"
+}
+
+###
+
+POST http://localhost:5000/api/converter/job
+Content-Type: application/json
+
+{
+  "source": "local",
+  "config": {
+    "host": "10.1.31.195",
+    "port": 3000,
+    "user": "Administrator",
+    "password": "5f4dcc3b5aa765d61d8327deb882cf99"
+  },
+  "file": [19]
+}
+
+###
+
+POST http://localhost:5000/api/converter/job
+Content-Type: application/json
+
+{
+  "source": "rapid",
+  "config": {
+    "host": "10.1.31.195",
+    "port": 3000,
+    "user": "Administrator",
+    "password": "5f4dcc3b5aa765d61d8327deb882cf99"
+  },
+  "plan_id": [26],
+  "created": "2021-06-01",
+  "before": 100
+}

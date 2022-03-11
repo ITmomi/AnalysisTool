@@ -1,0 +1,135 @@
+{
+    "data": {
+    },
+    "convert": {
+        "log_define": {
+            "log_name": "TiltMeasurementLog",
+            "table_name": "tilt_measurement_log",
+            "rule_name": "TEST"
+        },
+        "info": [],
+        "header": [
+            {
+                "index": 1,
+                "row_index": null,
+                "col_index": 1,
+                "name": "status",
+                "output_column": "status",
+                "data_type": "integer",
+                "coef": null,
+                "def_val": "null",
+                "def_type": "null",
+                "unit": ""
+            },
+            {
+                "index": 2,
+                "row_index": null,
+                "col_index": 2,
+                "name": "flt",
+                "output_column": "flt",
+                "data_type": "integer",
+                "coef": 1000,
+                "def_val": "null",
+                "def_type": "null",
+                "unit": ""
+            },
+            {
+                "index": 3,
+                "row_index": null,
+                "col_index": 3,
+                "name": "frt",
+                "output_column": "frt",
+                "data_type": "integer",
+                "coef": 1000,
+                "def_val": "null",
+                "def_type": "null",
+                "unit": ""
+            },
+            {
+                "index": 4,
+                "row_index": null,
+                "col_index": 4,
+                "name": "blt",
+                "output_column": "blt",
+                "data_type": "integer",
+                "coef": 1000,
+                "def_val": "null",
+                "def_type": "null",
+                "unit": ""
+            },
+            {
+                "index": 5,
+                "row_index": null,
+                "col_index": 5,
+                "name": "brt",
+                "output_column": "brt",
+                "data_type": "integer",
+                "coef": 1000,
+                "def_val": "null",
+                "def_type": "null",
+                "unit": ""
+            },
+            {
+                "index": 6,
+                "row_index": null,
+                "col_index": 6,
+                "name": "pitching",
+                "output_column": "pitching",
+                "data_type": "integer",
+                "coef": 1000,
+                "def_val": "null",
+                "def_type": "null",
+                "unit": ""
+            },
+            {
+                "index": 7,
+                "row_index": null,
+                "col_index": 7,
+                "name": "rolling",
+                "output_column": "rolling",
+                "data_type": "integer",
+                "coef": 1000,
+                "def_val": "null",
+                "def_type": "null",
+                "unit": ""
+            },
+            {
+                "index": 8,
+                "row_index": null,
+                "col_index": 8,
+                "name": "torsion",
+                "output_column": "torsion",
+                "data_type": "integer",
+                "coef": null,
+                "def_val": "null",
+                "def_type": "null",
+                "unit": ""
+            },
+            {
+                "index": 9,
+                "row_index": null,
+                "col_index": 9,
+                "name": "deflection",
+                "output_column": "deflection",
+                "data_type": "text",
+                "coef": 1000,
+                "def_val": "null",
+                "def_type": "null",
+                "unit": ""
+            },
+            {
+                "index": 10,
+                "row_index": null,
+                "col_index": 10,
+                "name": "log_time",
+                "output_column": "log_time",
+                "data_type": "timestamp",
+                "coef": null,
+                "def_val": "null",
+                "def_type": "null",
+                "unit": ""
+            }
+        ],
+        "custom": []
+    }
+}

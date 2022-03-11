@@ -1,0 +1,22 @@
+{
+    "cpmode": "auto",
+    "vsmode": "auto",
+    "cp1_chk": true,
+    "cp12d_chk": false,
+    "cp1d_chk": true,
+    "cp21d_chk": false,
+    "cp2_chk": true,
+    "cp23d_chk": false,
+    "cp3d_chk": true,
+    "cp32d_chk": false,
+    "cp3_chk": true,
+    "vs1l_chk": true,
+    "vs2l_chk": false,
+    "vs3l_chk": true,
+    "vs4l_chk": false,
+    "vsc_chk": true,
+    "vs4r_chk": false,
+    "vs3r_chk": true,
+    "vs2r_chk": false,
+    "vs1r_chk": true
+}

@@ -6,6 +6,7 @@ export const ANALYSIS = SLICE + 'job';
 export const PROCESS = SLICE + 'process';
 export const SETTINGS = SLICE + 'settings';
 export const OVERLAY = SLICE + 'overlay';
+export const TACT = SLICE + 'tact';
 
 export const OVERLAY_ADC_MEASUREMENT = OVERLAY + SLICE + 'adc';
 export const OVERLAY_CORRECTION = OVERLAY + SLICE + 'correction';

@@ -17,6 +17,7 @@ import {
   MAIN,
   NEW,
   OVERLAY,
+  TACT,
 } from '../../../lib/api/Define/URL';
 import JobStep from '../JobStep/JobStep';
 import ResultMain from '../JobAnalysis/ResultMain';
@@ -30,6 +31,7 @@ import {
 } from '../../../lib/api/axios/useMainRequest';
 import NotificationBox from '../../UI/molecules/NotificationBox/Notification';
 import Overlay from '../Overlay/Overlay';
+import TactStatusMonitor from "../TACT/StatusMonitor/TactStatusMonitor";
 
 const titleStyle = css`
   color: black;
@@ -136,6 +138,7 @@ const Router = () => {
               component={JobStep}
             />
             <Route path={OVERLAY} component={Overlay} />
+            <Route path={TACT} component={TactStatusMonitor}/>
             <Route path={MAIN} component={Error.notfound} />
           </Switch>
         </AppLayout.Content>

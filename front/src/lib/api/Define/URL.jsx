@@ -7,9 +7,16 @@ export const PROCESS = SLICE + 'process';
 export const SETTINGS = SLICE + 'settings';
 export const OVERLAY = SLICE + 'overlay';
 export const TACT = SLICE + 'tact';
+export const PLATE_TACT = SLICE + 'plateTact';
+export const PLATE_DETAIL_TACT = SLICE + 'plateDetailTact'
+export const TACT_TS_MEMORY_DUMP = SLICE + 'tsMemoryDump';
 
 export const OVERLAY_ADC_MEASUREMENT = OVERLAY + SLICE + 'adc';
 export const OVERLAY_CORRECTION = OVERLAY + SLICE + 'correction';
+
+// export const TACT_STATUS_MONITOR = TACT + SLICE + 'statusMonitor';
+// export const TACT_TS_MEMORY_DUMP = TACT + SLICE + 'tsMemoryDump';
+// export const TACT_SETTING = TACT + SLICE + 'tactSetting';
 
 export const URL_RESOURCE = '/api/resources';
 export const URL_RESOURCE_MAIN = URL_RESOURCE + '/main';
@@ -27,7 +34,7 @@ export const URL_RESOURCE_MAIN_CATEGORY = URL_RESOURCE_MAIN + '/category';
 export const URL_RESOURCE_REMOTE = URL_RESOURCE + '/remote';
 export const URL_RESOURCE_REMOTE_TABLE = URL_RESOURCE_REMOTE + '/tables';
 export const URL_RESOURCE_REMOTE_EQUIPMENTS =
-  URL_RESOURCE_REMOTE + '/equipments';
+	URL_RESOURCE_REMOTE + '/equipments';
 export const URL_RESOURCE_REMOTE_VALID_DATE = URL_RESOURCE_REMOTE + '/date';
 
 //NEXT BUTTON CLICK
@@ -40,7 +47,7 @@ export const URL_RESOURCE_NEW_STEP4 = URL_RESOURCE_NEW + '/step5';
 export const URL_RESOURCE_NEW_STEP5 = URL_RESOURCE_NEW + '/step6';
 
 export const URL_RESOURCE_STEP2_MULTI_SETTING =
-  URL_RESOURCE_NEW + '/step2' + SETTINGS;
+	URL_RESOURCE_NEW + '/step2' + SETTINGS;
 
 export const URL_RESOURCE_EDIT = URL_RESOURCE + '/edit';
 export const URL_RESOURCE_EDIT_INIT = URL_RESOURCE_EDIT + '/step1';
@@ -80,7 +87,7 @@ export const URL_SETTING_GET_LOCAL = URL_SETTING_MGMT + '/local';
 export const URL_SETTING_GET_REMOTE = URL_SETTING_MGMT + '/remote';
 export const URL_SETTING_GET_TABLES = URL_SETTING_MGMT + '/tables';
 export const URL_SETTING_CHECK_DB_CONNECTION =
-  URL_SETTING_MGMT + '/connection-check';
+	URL_SETTING_MGMT + '/connection-check';
 
 export const URL_IMPORT = '/api/import';
 export const URL_IMPORT_DBTABLE = URL_IMPORT + '/rules';

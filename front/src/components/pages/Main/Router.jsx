@@ -18,6 +18,9 @@ import {
   NEW,
   OVERLAY,
   TACT,
+  TACT_TS_MEMORY_DUMP,
+  PLATE_TACT,
+  PLATE_DETAIL_TACT,
 } from '../../../lib/api/Define/URL';
 import JobStep from '../JobStep/JobStep';
 import ResultMain from '../JobAnalysis/ResultMain';
@@ -31,7 +34,10 @@ import {
 } from '../../../lib/api/axios/useMainRequest';
 import NotificationBox from '../../UI/molecules/NotificationBox/Notification';
 import Overlay from '../Overlay/Overlay';
-import TactStatusMonitor from "../TACT/StatusMonitor/TactStatusMonitor";
+import TactStatusMonitor from "../TACT/StatusMonitor/JobTACT/TactStatusMonitor";
+import TactMemoryDump from "../TACT/TSMemoryDump/TactMemoryDump";
+import PlateTACTMain from "../TACT/StatusMonitor/PlateTACT/PlateTACTMain";
+import PlateDetailTACTMain from "../TACT/StatusMonitor/PlateDetailTACT/PlateDetailTACTMain";
 
 const titleStyle = css`
   color: black;
@@ -87,16 +93,16 @@ const Router = () => {
     },
   });
   const { error: VersionError, isLoading: isVersionLoading } = useQuery(
-    [QUERY_KEY.VERSION_INIT],
-    getMainVersionInfo,
-    {
-      onSuccess: (info) => {
-        setBasicInfo(info, null);
+      [QUERY_KEY.VERSION_INIT],
+      getMainVersionInfo,
+      {
+        onSuccess: (info) => {
+          setBasicInfo(info, null);
+        },
+        onError: (error) => {
+          NotificationBox('ERROR', error.message, 4.5);
+        },
       },
-      onError: (error) => {
-        NotificationBox('ERROR', error.message, 4.5);
-      },
-    },
   );
 
   useEffect(() => {
@@ -105,17 +111,17 @@ const Router = () => {
 
   if (isVersionLoading || isMainLoading || isMainReLoading)
     return (
-      <div css={loadingWrapper}>
-        <Spin tip="Loading..." size="large" />
-      </div>
+        <div css={loadingWrapper}>
+          <Spin tip="Loading..." size="large" />
+        </div>
     );
 
   if (MainError || VersionError)
     return (
-      <div>
-        <p>error occurred</p>
-        <p>{VersionError?.message ?? MainError?.message ?? 'ERROR'}</p>
-      </div>
+        <div>
+          <p>error occurred</p>
+          <p>{VersionError?.message ?? MainError?.message ?? 'ERROR'}</p>
+        </div>
     );
 
   if (versionInfo === '' || MenuInfo === '') return <div>no data</div>;
@@ -123,37 +129,40 @@ const Router = () => {
   const { title, footer } = MenuInfo;
 
   return (
-    <>
-      <AppLayout>
-        <AppLayout.Header>
-          <p css={titleStyle}>{title}</p>
-          <NaviBar />
-        </AppLayout.Header>
-        <AppLayout.Content>
-          <Switch>
-            <Route exact path={MAIN} component={MainPage} />
-            <Route path={ANALYSIS} component={ResultMain} />
-            <Route
-              path={[`${NEW}/:type/:category_id`, `${EDIT}/:type/:func_id`]}
-              component={JobStep}
-            />
-            <Route path={OVERLAY} component={Overlay} />
-            <Route path={TACT} component={TactStatusMonitor}/>
-            <Route path={MAIN} component={Error.notfound} />
-          </Switch>
-        </AppLayout.Content>
-        <AppLayout.Footer>
-          <VersionInfo footer={footer} info={versionInfo} />
-        </AppLayout.Footer>
-        <div css={buttonWrapper}>
-          <Button iconOnly size="md" onClick={openMgmtPage}>
-            <FontAwesomeIcon icon={faBinoculars} />
-          </Button>
-        </div>
-        <MgmtPage show={showMgmt} closeFunc={closeMgmtPage} />
-        <Job />
-      </AppLayout>
-    </>
+      <>
+        <AppLayout>
+          <AppLayout.Header>
+            <p css={titleStyle}>{title}</p>
+            <NaviBar />
+          </AppLayout.Header>
+          <AppLayout.Content>
+            <Switch>
+              <Route exact path={MAIN} component={MainPage} />
+              <Route path={ANALYSIS} component={ResultMain} />
+              <Route
+                  path={[`${NEW}/:type/:category_id`, `${EDIT}/:type/:func_id`]}
+                  component={JobStep}
+              />
+              <Route path={OVERLAY} component={Overlay} />
+              <Route path={TACT} component={TactStatusMonitor}/>
+              <Route path={TACT_TS_MEMORY_DUMP} component={TactMemoryDump}/>
+              <Route path={PLATE_TACT} component={PlateTACTMain}/>
+              <Route path={PLATE_DETAIL_TACT} component={PlateDetailTACTMain}/>
+              <Route path={MAIN} component={Error.notfound} />
+            </Switch>
+          </AppLayout.Content>
+          <AppLayout.Footer>
+            <VersionInfo footer={footer} info={versionInfo} />
+          </AppLayout.Footer>
+          <div css={buttonWrapper}>
+            <Button iconOnly size="md" onClick={openMgmtPage}>
+              <FontAwesomeIcon icon={faBinoculars} />
+            </Button>
+          </div>
+          <MgmtPage show={showMgmt} closeFunc={closeMgmtPage} />
+          <Job />
+        </AppLayout>
+      </>
   );
 };
 
